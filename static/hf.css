@@ -1,0 +1,19 @@
+/* Style for pop-up container */
+.popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+/* Style for video container */
+.video-container {
+    width: 1000px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the height as needed */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
