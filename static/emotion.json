@@ -1,0 +1,63 @@
+[
+    {
+      "ID": "001",
+      "transcript_reference": "T001",
+      "question": "What emotion is typically associated with receiving good news?",
+      "time_stamp": 75000,
+      "answers": [
+        {
+          "answer": "Happiness",
+          "correct": true
+        },
+        {
+          "answer": "Anger",
+          "correct": false
+        },
+        {
+          "answer": "Sadness",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "ID": "002",
+      "transcript_reference": "T002",
+      "question": "Which emotion might someone feel after losing a loved one?",
+      "time_stamp": 222000,
+      "answers": [
+        {
+          "answer": "Joy",
+          "correct": false
+        },
+        {
+          "answer": "Grief",
+          "correct": true
+        },
+        {
+          "answer": "Surprise",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "ID": "003",
+      "transcript_reference": "T003",
+      "question": "What emotion is often linked with achieving a long-term goal?",
+      "time_stamp": 450000,
+      "answers": [
+        {
+          "answer": "Pride",
+          "correct": true
+        },
+        {
+          "answer": "Fear",
+          "correct": false
+        },
+        {
+          "answer": "Disgust",
+          "correct": false
+        }
+      ]
+    }
+  ]
+  

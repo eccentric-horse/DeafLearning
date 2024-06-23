@@ -91,4 +91,14 @@ function initializeApp() {
 
 }
 
+function answerHandler(selectedAnswer) {
+    if(selectedAnswer.hasAttribute("correct")) {
+        alert("Yes that is right!");
+        return true;
+    } else {
+        alert("No that is not quite right.");
+        return false;
+    }
+}
+
 document.body.onload = initializeApp;

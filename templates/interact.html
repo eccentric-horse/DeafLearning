@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>Hello please first interact with the AI</h2>
+
+<form method='POST' action='/ask'>
+<table>
+<p>Use this form to interact with the model:</p>
+<tr><td>Question:</td><td><input name='input_string' type='TEXT' width='60'></td></tr>
+</table>
+<p>When you are ready, click this button:</p>
+<p><input value='Ask it!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 
-{% block questions %}
+{% block body %}
+
+<div>
+    <h2>Watch the Video</h2>
+    <!-- Video container -->
+    <video id="interactive-video" class="video-container" controls>
+        <source src="/video" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 
 <div id="question-1" class="popup-container">
     <h3>Quiz Question</h3>
@@ -20,17 +29,8 @@
     <button class="answer">1</button>
 </div>
 
+<script src="{{ url_for('static', filename='controller.js')}}"></script>
 <script type="text/javascript">
-    function answerHandler(selectedAnswer) {
-        if(selectedAnswer.hasAttribute("correct")) {
-            alert("Yes that is right!");
-            return true;
-        } else {
-            alert("No that is not quite right.");
-            return false;
-        }
-    }
-
     registerQuestion(document.getElementById("question-1"), 
         2000, answerHandler);
     registerQuestion(document.getElementById("question-2"), 
