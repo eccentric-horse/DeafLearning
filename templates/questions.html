@@ -9,32 +9,10 @@
         <source src="/video" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-</div>
 
-<div id="question-1" class="popup-container">
-    <h3>Quiz Question</h3>
-    <p>What is 2 + 2?</p>
-
-    <button class="answer" correct>4</button>
-    <button class="answer">3</button>
-    <button class="answer">5</button>
-</div>
-
-<div id="question-2" class="popup-container">
-    <h3>Quiz Question</h3>
-    <p>What is 5 + 1?</p>
-
-    <button class="answer">3</button>
-    <button class="answer" correct>6</button>
-    <button class="answer">1</button>
+    <div id="questions-container"></div>
 </div>
 
 <script src="{{ url_for('static', filename='controller.js')}}"></script>
-<script type="text/javascript">
-    registerQuestion(document.getElementById("question-1"), 
-        2000, answerHandler);
-    registerQuestion(document.getElementById("question-2"), 
-        5000, answerHandler);
-</script>
 
 {% endblock %}

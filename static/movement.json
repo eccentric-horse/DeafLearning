@@ -3,7 +3,7 @@
     "ID": "004",
     "transcript_reference": "T004",
     "question": "What type of movement is typically associated with running?",
-    "time_stamp": 60000,
+    "time_stamp": 600,
     "answers": [
       {
         "answer": "Fast",
@@ -23,7 +23,7 @@
     "ID": "005",
     "transcript_reference": "T005",
     "question": "Which movement is involved in jumping?",
-    "time_stamp": 120000,
+    "time_stamp": 1000,
     "answers": [
       {
         "answer": "Lifting off the ground",
@@ -43,7 +43,7 @@
     "ID": "006",
     "transcript_reference": "T006",
     "question": "What type of movement is performed in swimming?",
-    "time_stamp": 180000,
+    "time_stamp": 1800,
     "answers": [
       {
         "answer": "Walking",

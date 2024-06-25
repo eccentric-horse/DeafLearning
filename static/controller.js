@@ -84,21 +84,60 @@ function registerAllAnswers() {
     }
 }
 
-function initializeApp() {
-    registerAllAnswers();
-    video.elem.addEventListener('timeupdate', shouldShowQuestionTick);
-    video.elem.addEventListener('play', manageVideoPlay);
-
-}
-
 function answerHandler(selectedAnswer) {
-    if(selectedAnswer.hasAttribute("correct")) {
+    if(selectedAnswer.getAttribute("correct")) {
         alert("Yes that is right!");
         return true;
     } else {
         alert("No that is not quite right.");
         return false;
     }
+}
+
+function initializeApp() {
+    // Dynamic question loading
+    fetch('/get-questions') 
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('questions-container');
+
+            data.forEach((item, index) => {
+                const questionContainer = document.createElement('div');
+                questionContainer.id = `question-${index + 1}`;
+                questionContainer.className = 'popup-container';
+
+                const questionHeader = document.createElement('h3');
+                questionHeader.textContent = `Quiz Question`;
+                questionContainer.appendChild(questionHeader);
+
+                const questionText = document.createElement('p');
+                questionText.textContent = item.question;
+                questionContainer.appendChild(questionText);
+
+                item.answers.forEach(answer => {
+                    const answerButton = document.createElement('button');
+                    answerButton.className = 'answer';
+                    answerButton.textContent = answer.answer;
+
+                    if (answer.correct) {
+                        answerButton.setAttribute("correct", true);
+                    }
+
+                    questionContainer.appendChild(answerButton);
+                });
+
+                container.appendChild(questionContainer);
+                registerQuestion(questionContainer, item.time_stamp, answerHandler);
+            });
+
+            registerAllAnswers(); // Register answer event listeners
+            video.elem.addEventListener('timeupdate', shouldShowQuestionTick); // Listen for time updates
+            video.elem.addEventListener('play', manageVideoPlay); // Listen for play events
+        })
+        .catch(error => {
+            console.error('Error fetching questions:', error);
+        });
+
 }
 
 document.body.onload = initializeApp;
