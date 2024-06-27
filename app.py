@@ -7,11 +7,13 @@ from utitlities import ChatTemplate
 app = Flask(__name__)
 chat_template = ChatTemplate.from_file('questionTypes.json')
 chat_history = ''
+print("CHAT HISTORY\n" + chat_history)
 done_pattern = r'QUESTIONS(.*)DONE'
 
 @app.route('/')
 def start() -> "html":
-    chat_history.concat("ChatBot: ").concat(chat_template.template['messages'][-1]['content'])
+    chat_history.join(["ChatBot: ", chat_template.template['messages'][-1]['content']])
+    print("CHAT HISTORY\n" + chat_history)
     return render_template('welcome.html', chatbot_message=chat_history)
 
 
@@ -20,7 +22,7 @@ def onboarding() -> "html":
     # Grab user input from text box
     prompt = request.form['user_input']
     # Append to textual chat history for printing on the screen
-    chat_history.concat("You: ").concat(prompt)
+    chat_history.join(["You: ", prompt])
     # Store to memory as chat context / history
     chat_template.template['messages'].append({'role': 'user', 'content': prompt})
     # Generate a response based on the updated chat template
@@ -31,9 +33,10 @@ def onboarding() -> "html":
         # Return the extracted information, stripped of leading and trailing whitespace
         return re.search(done_pattern, message.content, re.DOTALL).group(1).strip()
     # Append response to textual chat history for printing
-    chat_history.concat("ChatBot: ").concat(f'{message.content}')
+    chat_history.join(["ChatBot: ", f'{message.content}'])
     # Store to memory as chat context / history
     chat_template.template['messages'].append({'role': message.role, 'content': message.content})
+    print("CHAT HISTORY\n" + chat_history)
     return render_template('welcome.html', chatbot_message=chat_history)
 
 
