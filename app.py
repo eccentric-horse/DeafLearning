@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify, send_file
 from AI_interaction import answer_question
 from chooseQuestions import chooseQuestions
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -19,6 +18,7 @@ def do_ask() -> "html":
 @app.route('/get-questions', methods=['GET'])
 def get_questions():
     # This input file list should be figured out by ChatGPT
+    # input_list = get_question_types()
     input_list = ['transcript', 'emotion', 'movement']
     result = chooseQuestions(input_list)
     return jsonify(result)
