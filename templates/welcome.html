@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>Onboarding</h2>
+
+<form method="post" action="/onboarding">
+    <table>
+        <p>{{ chatbot_message }}</p>
+        <tr><td>You: </td><td><input name="user_input" type="text" width="120"></td></tr>
+    </table>
+    <p><input value="Submit" type="submit"></p>
+</form>
+
+{% endblock %}
