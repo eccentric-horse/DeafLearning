@@ -5,24 +5,19 @@ from chooseQuestions import chooseQuestions
 from utitlities import ChatTemplate
 
 app = Flask(__name__)
-chat_template = ChatTemplate.from_file('questionTypes.json')
-chat_history = ''
-print("CHAT HISTORY\n" + chat_history)
-done_pattern = r'QUESTIONS(.*)DONE'
 
 @app.route('/')
-def start() -> "html":
-    chat_history.join(["ChatBot: ", chat_template.template['messages'][-1]['content']])
-    print("CHAT HISTORY\n" + chat_history)
+def start(chat_history="", chat_template=ChatTemplate.from_file('questionTypes.json')) -> "html":
+    chat_history += "ChatBot: " + chat_template.template['messages'][-1]['content']
     return render_template('welcome.html', chatbot_message=chat_history)
 
 
 @app.route('/onboarding', methods=['POST'])
-def onboarding() -> "html":
+def onboarding(chat_history="", chat_template=ChatTemplate.from_file('questionTypes.json'), done_pattern=r'QUESTIONS(.*)DONE') -> "html":
     # Grab user input from text box
     prompt = request.form['user_input']
     # Append to textual chat history for printing on the screen
-    chat_history.join(["You: ", prompt])
+    chat_history += "You: " + prompt + "\n"
     # Store to memory as chat context / history
     chat_template.template['messages'].append({'role': 'user', 'content': prompt})
     # Generate a response based on the updated chat template
@@ -33,10 +28,9 @@ def onboarding() -> "html":
         # Return the extracted information, stripped of leading and trailing whitespace
         return re.search(done_pattern, message.content, re.DOTALL).group(1).strip()
     # Append response to textual chat history for printing
-    chat_history.join(["ChatBot: ", f'{message.content}'])
+    chat_history += "ChatBot: " + f'{message.content}'
     # Store to memory as chat context / history
     chat_template.template['messages'].append({'role': message.role, 'content': message.content})
-    print("CHAT HISTORY\n" + chat_history)
     return render_template('welcome.html', chatbot_message=chat_history)
 
 
@@ -48,6 +42,7 @@ def index() -> "html":
 @app.route('/ask', methods=["POST"])
 def do_ask() -> "html":
     input_string = request.form['input_string']
+    print(input_string)
     results = answer_question(input_string)
     return render_template('response.html',
                            the_input_string=input_string,
