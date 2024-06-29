@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, jsonify, send_file, session, redirect, url_for
 from question_util import choose_questions, get_question_types
+import os
 
 app = Flask(__name__)
-app.secret_key = 'this should be in an environment variable or secret vault or something'
+app.secret_key = os.environ['SESSION_SECRET']
 
 @app.route('/')
 def index() -> "html":

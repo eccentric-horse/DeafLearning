@@ -6,7 +6,7 @@ import re
 # might want to migrate away from this as it could be security risk 
 # when paired with pickle, depends on how the session cookie is signed...
 from flask import session 
-from utitlities import ChatTemplate
+from utilities import ChatTemplate
 
 # How many questions we pick for the video
 total_questions = 3
