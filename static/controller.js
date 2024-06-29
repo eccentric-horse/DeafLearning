@@ -95,8 +95,7 @@ function answerHandler(selectedAnswer) {
 }
 
 function initializeApp() {
-    // Dynamic question loading
-    fetch('/get-questions') 
+    fetch('/get-questions' + document.location.search) 
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('questions-container');
@@ -137,7 +136,6 @@ function initializeApp() {
         .catch(error => {
             console.error('Error fetching questions:', error);
         });
-
 }
 
 document.body.onload = initializeApp;

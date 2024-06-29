@@ -17,3 +17,77 @@
     position: relative;
     overflow: hidden;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 30px;
+    text-align: left;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 25px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: left;
+}
+
+h3 {
+    color: #16a085;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: left;
+}

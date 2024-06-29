@@ -5,7 +5,7 @@
 
 <p>You submitted the following data:</p>
 <table>
-<tr><td>Question:</td><td>{{ the_input_string }}</td></tr>
+<tr><td>Your response:</td><td>{{ the_input_string }}</td></tr>
 </table>
 
 <p>The following answer is returned:</p>
@@ -14,10 +14,10 @@
 <form method='POST' action='/ask'>
     <table>
     <p>Do you have more questions?</p>
-    <tr><td>Question:</td><td><input name='input_string' type='TEXT' width='60'></td></tr>
+    <tr><td>Your response:</td><td><input name='input_string' type='TEXT' width='60'></td></tr>
     </table>
     <p>When you are ready, click this button:</p>
-    <p><input value='Ask it!' type='SUBMIT'></p>
+    <p><input value='Submit!' type='SUBMIT'></p>
 </form>
 
 {% endblock %}
