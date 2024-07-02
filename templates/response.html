@@ -3,18 +3,17 @@
 {% block body %}
 
 
-<p>You submitted the following data:</p>
+<h5>You:</h5>
 <table>
-<tr><td>Your response:</td><td>{{ the_input_string }}</td></tr>
+<tr><td>{{ the_input_string }}</td></tr>
 </table>
 
-<p>The following answer is returned:</p>
-<h3>{{ the_results }}</h3>
+<h4>Chatbot:</h4>
+<p id="chatbot" style="white-space: pre-wrap">{{ the_results }}</p>
 
 <form method='POST' action='/ask'>
     <table>
-    <p>Do you have more questions?</p>
-    <tr><td>Your response:</td><td><input name='input_string' type='TEXT' width='60'></td></tr>
+    <tr><td>You:</td><td><input name='input_string' type='TEXT' width='60'></td></tr>
     </table>
     <p>When you are ready, click this button:</p>
     <p><input value='Submit!' type='SUBMIT'></p>
