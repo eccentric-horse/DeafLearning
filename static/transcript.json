@@ -1,282 +1,304 @@
 [
   {
-    "ID": "3",
-    "transcript_reference": "",
-    "question": "What is AR Core?",
-    "time_stamp": 252,
-    "answers": [
-      {
-        "answer": "A video game",
-        "correct": false
-      },
-      {
-        "answer": "A programming language",
-        "correct": false
-      },
-      {
-        "answer": "An application programming interface (API)",
-        "correct": true
-      },
-      {
-        "answer": "A virtual reality headset",
-        "correct": false
-      }
-    ]
+      "ID": "7",
+      "transcript_timestamp_start": "0",
+      "transcript_reference": "The term 'augmented reality' was first coined in 1992 by Thomas Caudell and David Mizell",
+      "question": "True or False: The term \"augmented reality\" was coined in 1992 by Thomas Caudell and David Mizell.",
+      "time_stamp": 7500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": true
+          },
+          {
+              "answer": "False",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "6",
-    "transcript_reference": "",
-    "question": "What was Tango according to the video?",
-    "time_stamp": 252,
-    "answers": [
-      {
-        "answer": "A software-only application for smartphones",
-        "correct": false
-      },
-      {
-        "answer": "A combination of custom software and extra hardware for smartphones",
-        "correct": true
-      },
-      {
-        "answer": "A social media platform",
-        "correct": false
-      },
-      {
-        "answer": "An augmented reality game",
-        "correct": false
-      }
-    ]
+      "ID": "4",
+      "transcript_timestamp_start": "191000",
+      "transcript_reference": "Google's first foray into the ar space was  google glass a head mounted display that took the form of smart glasses",
+      "question": "True or False: Google's first attempt in the AR space was Project Tango.",
+      "time_stamp": 200500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": false
+          },
+          {
+              "answer": "False",
+              "correct": true
+          }
+      ]
   },
   {
-    "ID": "9",
-    "transcript_reference": "",
-    "question": "True or False: Pokémon GO was considered a complete AR (augmented reality) game when it first launced.",
-    "time_stamp": 467000,
-    "answers": [
-      {
-        "answer": "True",
-        "correct": false
-      },
-      {
-        "answer": "False",
-        "correct": true
-      }
-    ]
+      "ID": "37",
+      "transcript_timestamp_start": "191000",
+      "transcript_reference": "Google's first foray into the ar space was  google glass a head mounted display that took the form of smart glasses",
+      "question": "What was Google's first attempt in the AR space?",
+      "time_stamp": 200500,
+      "answers": [
+          {
+              "answer": "Google Glass",
+              "correct": true
+          },
+          {
+              "answer": "Project Tango",
+              "correct": false
+          },
+          {
+              "answer": "Google Cardboard",
+              "correct": false
+          },
+          {
+              "answer": "Oculus Rift",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "12",
-    "transcript_reference": "",
-    "question": "True or False: AR technology allows users to interact with brands only through screens.",
-    "time_stamp": 360000,
-    "answers": [
-      {
-        "answer": "True",
-        "correct": false
-      },
-      {
-        "answer": "False",
-        "correct": true
-      }
-    ]
+      "ID": "5",
+      "transcript_timestamp_start": "205000",
+      "transcript_reference": "Google's next ar play was project tango. Tango was a combination of custom software and additional hardware for unique depth sensing  smartphones",
+      "question": "What was Google's next venture after Google Glass in the AR space?",
+      "time_stamp": 216500,
+      "answers": [
+          {
+              "answer": "Project Tango",
+              "correct": true
+          },
+          {
+              "answer": "AR Core",
+              "correct": false
+          },
+          {
+              "answer": "Smartphones",
+              "correct": false
+          },
+          {
+              "answer": "Virtual Reality",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "15",
-    "transcript_reference": "",
-    "question": "Is it true that AR allows people to virtually try out products like furniture in their actual surroundings?",
-    "time_stamp": 326000,
-    "answers": [
-      {
-        "answer": "True",
-        "correct": true
-      },
-      {
-        "answer": "False",
-        "correct": false
-      }
-    ]
+      "ID": "14",
+      "transcript_timestamp_start": "277000",
+      "transcript_reference": "but the top use case for AR shopping right now is furniture according to a few major studies.",
+      "question": "Which industry is mentioned as having the top use case for AR shopping?",
+      "time_stamp": 283500,
+      "answers": [
+          {
+              "answer": "Electronics",
+              "correct": false
+          },
+          {
+              "answer": "Clothing",
+              "correct": false
+          },
+          {
+              "answer": "Furniture",
+              "correct": true
+          },
+          {
+              "answer": "Books",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "18",
-    "transcript_reference": "",
-    "question": "Was Snapchat the first social media platform to fully embrace AR?",
-    "time_stamp": 426000,
-    "answers": [
-      {
-        "answer": "True",
-        "correct": true
-      },
-      {
-        "answer": "False",
-        "correct": false
-      }
-    ]
+      "ID": "18",
+      "transcript_timestamp_start": "366000.",
+      "transcript_reference": "snapchat  was the first media platform to fully embrace AR. The platform introduced lenses in 2015 building  off the popularity of filters",
+      "question": "True or False: Snapchat was the first social media platform to fully embrace AR.",
+      "time_stamp": 375500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": true
+          },
+          {
+              "answer": "False",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "21",
-    "transcript_reference": "",
-    "question": "What does occlusion mean in augmented reality?",
-    "time_stamp": 774000,
-    "answers": [
-      {
-        "answer": "Showing solid AR objects clearly",
-        "correct": false
-      },
-      {
-        "answer": "Allowing AR objects to change in size",
-        "correct": false
-      },
-      {
-        "answer": "Hiding virtual objects behind other virtual or physical objects",
-        "correct": true
-      },
-      {
-        "answer": "Understanding the AR environment well",
-        "correct": false
-      }
-    ]
+      "ID": "38",
+      "transcript_timestamp_start": "366000.",
+      "transcript_reference": "snapchat  was the first media platform to fully embrace AR. The platform introduced lenses in 2015 building  off the popularity of filters",
+      "question": "What was the first social media platform to fully embrace AR?",
+      "time_stamp": 375500,
+      "answers": [
+          {
+              "answer": "Instagram",
+              "correct": false
+          },
+          {
+              "answer": "Snapchat",
+              "correct": true
+          },
+          {
+              "answer": "Twitter",
+              "correct": false
+          },
+          {
+              "answer": "Facebook",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "24",
-    "transcript_reference": "",
-    "question": "What information does AR technology need to track about objects in its surroundings?",
-    "time_stamp": 900000,
-    "answers": [
-      {
-        "answer": "Just their color",
-        "correct": false
-      },
-      {
-        "answer": "Their size and shape",
-        "correct": true
-      },
-      {
-        "answer": "Only their location",
-        "correct": false
-      },
-      {
-        "answer": "Their material makeup",
-        "correct": false
-      }
-    ]
+      "ID": "19",
+      "transcript_timestamp_start": "366000.",
+      "transcript_reference": "snapchat  was the first media platform to fully embrace AR. The platform introduced lenses in 2015 building  off the popularity of filters these allowed users to digitally augment and manipulate faces  including that famous rainbow vomiting lens.",
+      "question": "Which social media platform was the first to fully embrace AR?",
+      "time_stamp": 382500,
+      "answers": [
+          {
+              "answer": "Facebook",
+              "correct": false
+          },
+          {
+              "answer": "Snapchat",
+              "correct": true
+          },
+          {
+              "answer": "Instagram",
+              "correct": false
+          },
+          {
+              "answer": "Twitter",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
+      "ID": "9",
+      "transcript_timestamp_start": "444000",
+      "transcript_reference": "It's also worth noting that while pokemon go was  popular. It also wasn't full ars. It just overlaid flat 2d images on the real world creatures  in that initial launch of pokemon go",
+      "question": "True or False: Pokémon GO was considered a full AR game at its initial launch.",
+      "time_stamp": 455500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": false
+          },
+          {
+              "answer": "False",
+              "correct": true
+          }
+      ]
   },
   {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
+      "ID": "28",
+      "transcript_timestamp_start": "644000",
+      "transcript_reference": "The first of these behaviors is place stationary  ar objects need to stick to one point in a given environment",
+      "question": "True or False: AR objects need to stick to one point in a given environment.",
+      "time_stamp": 651500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": true
+          },
+          {
+              "answer": "False",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
+      "ID": "29",
+      "transcript_timestamp_start": "644000",
+      "transcript_reference": "The first of these behaviors is place stationary  ar objects need to stick to one point in a given environment.",
+      "question": "What is one of the basic rules that augmented reality creators need to remember about the way objects behave in AR?",
+      "time_stamp": 651500,
+      "answers": [
+          {
+              "answer": "Overlap with real-world objects",
+              "correct": false
+          },
+          {
+              "answer": "Float in thin air",
+              "correct": false
+          },
+          {
+              "answer": "Stick to one point in a given environment",
+              "correct": true
+          },
+          {
+              "answer": "Change size randomly",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
+      "ID": "21",
+      "transcript_timestamp_start": "759000.",
+      "transcript_reference": "Occlusion means hiding virtual objects behind  other virtual objects and ones in the real world",
+      "question": "What is occlusion in augmented reality?",
+      "time_stamp": 764500,
+      "answers": [
+          {
+              "answer": "The appearance of solid AR objects",
+              "correct": false
+          },
+          {
+              "answer": "The ability of AR objects to scale",
+              "correct": false
+          },
+          {
+              "answer": "Hiding virtual objects behind other virtual or physical objects",
+              "correct": true
+          },
+          {
+              "answer": "The understanding of the content of the AR environment",
+              "correct": false
+          }
+      ]
   },
   {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
+      "ID": "25",
+      "transcript_timestamp_start": "794000.",
+      "transcript_reference": "just like a real world object.  Objects in AR need  to respond to different patterns of lighting to make sense in our minds.",
+      "question": "True or False: AR objects are not required to respond to different patterns of lighting to make sense in our minds.",
+      "time_stamp": 801500,
+      "answers": [
+          {
+              "answer": "True",
+              "correct": false
+          },
+          {
+              "answer": "False",
+              "correct": true
+          }
+      ]
+  },
+  {
+      "ID": "39",
+      "transcript_timestamp_start": "794000.",
+      "transcript_reference": "just like a real world object.  Objects in AR need  to respond to different patterns of lighting to make sense in our minds.",
+      "question": "What is the requirement for AR objects?",
+      "time_stamp": 801500,
+      "answers": [
+          {
+              "answer": "Change colors",
+              "correct": false
+          },
+          {
+              "answer": "Respond to various lighting patterns",
+              "correct": true
+          },
+          {
+              "answer": "Move constantly",
+              "correct": false
+          },
+          {
+              "answer": "Be completely still",
+              "correct": false
+          }
+      ]
   }
 ]
