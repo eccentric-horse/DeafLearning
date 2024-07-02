@@ -1,63 +1,282 @@
 [
-    {
-      "ID": "007",
-      "transcript_reference": "T007",
-      "question": "What topic was discussed at the beginning of the transcript?",
-      "time_stamp": 3000,
-      "answers": [
-        {
-          "answer": "Introduction to the project",
-          "correct": true
-        },
-        {
-          "answer": "Conclusion of the meeting",
-          "correct": false
-        },
-        {
-          "answer": "Break time",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "ID": "008",
-      "transcript_reference": "T008",
-      "question": "Who presented the financial report?",
-      "time_stamp": 900,
-      "answers": [
-        {
-          "answer": "John Doe",
-          "correct": true
-        },
-        {
-          "answer": "Jane Smith",
-          "correct": false
-        },
-        {
-          "answer": "Emily Clark",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "ID": "009",
-      "transcript_reference": "T009",
-      "question": "What was the main issue raised during the Q&A session?",
-      "time_stamp": 500,
-      "answers": [
-        {
-          "answer": "Budget concerns",
-          "correct": true
-        },
-        {
-          "answer": "Team building activities",
-          "correct": false
-        },
-        {
-          "answer": "Holiday plans",
-          "correct": false
-        }
-      ]
-    }
-  ]
-  
+  {
+    "ID": "3",
+    "transcript_reference": "",
+    "question": "What is AR Core?",
+    "time_stamp": 252,
+    "answers": [
+      {
+        "answer": "A video game",
+        "correct": false
+      },
+      {
+        "answer": "A programming language",
+        "correct": false
+      },
+      {
+        "answer": "An application programming interface (API)",
+        "correct": true
+      },
+      {
+        "answer": "A virtual reality headset",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "6",
+    "transcript_reference": "",
+    "question": "What was Tango according to the video?",
+    "time_stamp": 252,
+    "answers": [
+      {
+        "answer": "A software-only application for smartphones",
+        "correct": false
+      },
+      {
+        "answer": "A combination of custom software and extra hardware for smartphones",
+        "correct": true
+      },
+      {
+        "answer": "A social media platform",
+        "correct": false
+      },
+      {
+        "answer": "An augmented reality game",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "9",
+    "transcript_reference": "",
+    "question": "True or False: Pokémon GO was considered a complete AR (augmented reality) game when it first launced.",
+    "time_stamp": 467000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": false
+      },
+      {
+        "answer": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "ID": "12",
+    "transcript_reference": "",
+    "question": "True or False: AR technology allows users to interact with brands only through screens.",
+    "time_stamp": 360000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": false
+      },
+      {
+        "answer": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "ID": "15",
+    "transcript_reference": "",
+    "question": "Is it true that AR allows people to virtually try out products like furniture in their actual surroundings?",
+    "time_stamp": 326000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "18",
+    "transcript_reference": "",
+    "question": "Was Snapchat the first social media platform to fully embrace AR?",
+    "time_stamp": 426000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "21",
+    "transcript_reference": "",
+    "question": "What does occlusion mean in augmented reality?",
+    "time_stamp": 774000,
+    "answers": [
+      {
+        "answer": "Showing solid AR objects clearly",
+        "correct": false
+      },
+      {
+        "answer": "Allowing AR objects to change in size",
+        "correct": false
+      },
+      {
+        "answer": "Hiding virtual objects behind other virtual or physical objects",
+        "correct": true
+      },
+      {
+        "answer": "Understanding the AR environment well",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "24",
+    "transcript_reference": "",
+    "question": "What information does AR technology need to track about objects in its surroundings?",
+    "time_stamp": 900000,
+    "answers": [
+      {
+        "answer": "Just their color",
+        "correct": false
+      },
+      {
+        "answer": "Their size and shape",
+        "correct": true
+      },
+      {
+        "answer": "Only their location",
+        "correct": false
+      },
+      {
+        "answer": "Their material makeup",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  }
+]

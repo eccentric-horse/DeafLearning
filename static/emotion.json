@@ -1,63 +1,234 @@
 [
-    {
-      "ID": "001",
-      "transcript_reference": "T001",
-      "question": "What emotion is typically associated with receiving good news?",
-      "time_stamp": 15000,
-      "answers": [
-        {
-          "answer": "Happiness",
-          "correct": true
-        },
-        {
-          "answer": "Anger",
-          "correct": false
-        },
-        {
-          "answer": "Sadness",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "ID": "002",
-      "transcript_reference": "T002",
-      "question": "Which emotion might someone feel after losing a loved one?",
-      "time_stamp": 2220,
-      "answers": [
-        {
-          "answer": "Joy",
-          "correct": false
-        },
-        {
-          "answer": "Grief",
-          "correct": true
-        },
-        {
-          "answer": "Surprise",
-          "correct": false
-        }
-      ]
-    },
-    {
-      "ID": "003",
-      "transcript_reference": "T003",
-      "question": "What emotion is often linked with achieving a long-term goal?",
-      "time_stamp": 4500,
-      "answers": [
-        {
-          "answer": "Pride",
-          "correct": true
-        },
-        {
-          "answer": "Fear",
-          "correct": false
-        },
-        {
-          "answer": "Disgust",
-          "correct": false
-        }
-      ]
-    }
-  ]
-  
+  {
+    "ID": "1",
+    "transcript_reference": "",
+    "question": "True or False: The fast growth of smartphones did not help the VR and AR industries.",
+    "time_stamp": 189000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": false
+      },
+      {
+        "answer": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "ID": "4",
+    "transcript_reference": "",
+    "question": "True or False: Google's first attempt in the AR space was Project Tango.",
+    "time_stamp": 226000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": false
+      },
+      {
+        "answer": "False",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "ID": "7",
+    "transcript_reference": "",
+    "question": "Was the term \"augmented reality\" invented in 1992 by Thomas Caudell and David Mizell?",
+    "time_stamp": 30000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "10",
+    "transcript_reference": "",
+    "question": "True or False: In some significant research, it is said that furniture is the main use of AR shopping nowadays.",
+    "time_stamp": 326000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "13",
+    "transcript_reference": "",
+    "question": "Is it true or false that with AR, you can place digital furniture models into your actual surroundings, unlike with @D images?",
+    "time_stamp": 326000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "16",
+    "transcript_reference": "",
+    "question": "What was the behavior of the characters in the initial launch of Pokémon Go?",
+    "time_stamp": 467000,
+    "answers": [
+      {
+        "answer": "They behaved like real-life objects",
+        "correct": false
+      },
+      {
+        "answer": "They floated on the screen",
+        "correct": true
+      },
+      {
+        "answer": "They disappeared when placed on the ground",
+        "correct": false
+      },
+      {
+        "answer": "They interacted with physical objects in the environment",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "19",
+    "transcript_reference": "",
+    "question": "Which social media platform was the first to fully embrace AR?",
+    "time_stamp": 426000,
+    "answers": [
+      {
+        "answer": "Facebook",
+        "correct": false
+      },
+      {
+        "answer": "Snapchat",
+        "correct": true
+      },
+      {
+        "answer": "Instagram",
+        "correct": false
+      },
+      {
+        "answer": "Twitter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "22",
+    "transcript_reference": "",
+    "question": "Does AR hardware need to be aware of every object in its environment to work well?",
+    "time_stamp": 900000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "25",
+    "transcript_reference": "",
+    "question": "Is it true that occlusion in AR involves hiding virtual objects behind real-world objects to make the experience more immersive?",
+    "time_stamp": 793000,
+    "answers": [
+      {
+        "answer": "True",
+        "correct": true
+      },
+      {
+        "answer": "False",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "ID": "",
+    "transcript_reference": "",
+    "question": "",
+    "time_stamp": 0,
+    "answers": [
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      },
+      {
+        "answer": "",
+        "correct": false
+      }
+    ]
+  }
+]
