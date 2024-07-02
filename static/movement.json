@@ -1,265 +1,61 @@
 [
   {
-    "ID": "2",
-    "transcript_reference": "",
-    "question": "True or False: According to the information, the main goal of augmented reality (AR) was to improve efficiency in aircraft manufacturing.",
-    "time_stamp": 126000,
+    "ID": "004",
+    "transcript_reference": "T004",
+    "question": "What type of movement is typically associated with running?",
+    "time_stamp": 600,
     "answers": [
       {
-        "answer": "True",
+        "answer": "Fast",
         "correct": true
       },
       {
-        "answer": "False",
+        "answer": "Slow",
+        "correct": false
+      },
+      {
+        "answer": "Stationary",
         "correct": false
       }
     ]
   },
   {
-    "ID": "5",
-    "transcript_reference": "",
-    "question": "What was Google's next project after Google Glass in the AR field?",
-    "time_stamp": 252,
+    "ID": "005",
+    "transcript_reference": "T005",
+    "question": "Which movement is involved in jumping?",
+    "time_stamp": 1000,
     "answers": [
       {
-        "answer": "Project Tango",
+        "answer": "Lifting off the ground",
         "correct": true
       },
       {
-        "answer": "AR Core",
+        "answer": "Staying still",
         "correct": false
       },
       {
-        "answer": "Smartphones",
-        "correct": false
-      },
-      {
-        "answer": "Virtual Reality",
+        "answer": "Sliding",
         "correct": false
       }
     ]
   },
   {
-    "ID": "8",
-    "transcript_reference": "",
-    "question": "Were the two engineers working on a complex virtual reality headset?",
-    "time_stamp": 30000,
+    "ID": "006",
+    "transcript_reference": "T006",
+    "question": "What type of movement is performed in swimming?",
+    "time_stamp": 1800,
     "answers": [
       {
-        "answer": "True",
+        "answer": "Walking",
         "correct": false
       },
       {
-        "answer": "False",
+        "answer": "Flying",
+        "correct": false
+      },
+      {
+        "answer": "Stroking through water",
         "correct": true
-      }
-    ]
-  },
-  {
-    "ID": "11",
-    "transcript_reference": "",
-    "question": "How does the video show AR can help non-profits and social impact groups?",
-    "time_stamp": 620000,
-    "answers": [
-      {
-        "answer": "By showing to only a few people",
-        "correct": false
-      },
-      {
-        "answer": "By giving talks in front of many people",
-        "correct": false
-      },
-      {
-        "answer": "By helping audiences see real-world effects of systemic issues",
-        "correct": true
-      },
-      {
-        "answer": "By not using technology in messaging",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "14",
-    "transcript_reference": "",
-    "question": "Which type of product is currently the main focus for AR shopping, according to the transcript?",
-    "time_stamp": 326000,
-    "answers": [
-      {
-        "answer": "Electronics",
-        "correct": false
-      },
-      {
-        "answer": "Clothing",
-        "correct": false
-      },
-      {
-        "answer": "Furniture",
-        "correct": true
-      },
-      {
-        "answer": "Books",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "17",
-    "transcript_reference": "",
-    "question": "What will happen to AR games in the future according to the video?",
-    "time_stamp": 430000,
-    "answers": [
-      {
-        "answer": "They will become less popular",
-        "correct": false
-      },
-      {
-        "answer": "No more AR games will be released",
-        "correct": false
-      },
-      {
-        "answer": "More AR games from popular franchises will be seen in the future",
-        "correct": true
-      },
-      {
-        "answer": "Only solo game developers will release AR games",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "20",
-    "transcript_reference": "",
-    "question": "How is spatial learning different from traditional learning with textbooks?",
-    "time_stamp": 524000,
-    "answers": [
-      {
-        "answer": "Involves imagining 3D content",
-        "correct": false
-      },
-      {
-        "answer": "Requires reading long text descriptions",
-        "correct": false
-      },
-      {
-        "answer": "Allows direct engagement with 3D content",
-        "correct": true
-      },
-      {
-        "answer": "Only relies on hearing information",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "23",
-    "transcript_reference": "",
-    "question": "True or False: AR objects are not affected by occlusion.",
-    "time_stamp": 758000,
-    "answers": [
-      {
-        "answer": "True",
-        "correct": false
-      },
-      {
-        "answer": "False",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "ID": "26",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "ID": "",
-    "transcript_reference": "",
-    "question": "",
-    "time_stamp": 0,
-    "answers": [
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
-      },
-      {
-        "answer": "",
-        "correct": false
       }
     ]
   }
