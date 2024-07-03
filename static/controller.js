@@ -6,7 +6,12 @@
 // manage video controls to get more exact timing, to do
 // this could use a player library like video.js
 // or something.
+
+
+
 let questions = []
+// Keeps track of what question we are waiting next for (eliminates the need for linear look up)
+let counter = 0
 
 const video = {
     get elem() {
@@ -24,6 +29,7 @@ class Question {
 
     answeredQuestion() {
         this.answered = true;
+        ++counter; // Increment counter so that next question can be checked now
         this.hideQuestion();
     }
 
@@ -58,9 +64,22 @@ function registerQuestion(element, timestamp, handler) {
 function shouldShowQuestionTick(event) {
     let timeMs = Math.floor(video.elem.currentTime * 1000);
     console.log("shouldShowQuestionTick currentTime = " + timeMs + " ms");
-    for(let question of questions) {
-        if(timeMs >= question.timestamp && !question.answered) {
-            question.showQuestion();
+
+    // Loads in the next question as dictated by the counter
+    // Question will either be waiting for the video timestamp to pass its own, so that it can pop up, or
+    // it is currently visible on-screen waiting to be answered - user can rewind to watch prior content again
+    let question = questions.at(counter);
+
+    // Check if there is a question open right now
+    if (video.elem.questionOpen) { // If so, worry about time control
+        if (timeMs > question.timestamp) { // Checks if new video timestamp is after when the question is supposed to pop up
+            video.elem.currentTime = question.timestamp / 1000; // Forces video back to question pop-up time
+        } else if (timeMs < question.timestamp - 1000) { // Checks if new video timestamp was rewinded by more than a second
+            question.hideQuestion(); // Putting the current question aside for now
+        }
+    } else { // If not, check if the next question in the list is ready to pop-up
+        if (timeMs >= question.timestamp && !question.answered) { // Checks if question is ready to pop up, and if it is unanswered (technically not needed)
+            question.showQuestion(); // Appear!
         }
     }
 }
@@ -128,6 +147,16 @@ function initializeApp() {
                 container.appendChild(questionContainer);
                 registerQuestion(questionContainer, item.time_stamp, answerHandler);
             });
+
+            // Sorts the questions list by their timestamp in ascending order
+            questions.sort(function(a, b) {
+                return a.timestamp - b.timestamp;
+            });
+            // For verifying sort
+            // console.log("Questions sorted, timestamps are now ordered as follow:")
+            // for (let question of questions) {
+            //     console.log(question.timestamp)
+            // }
 
             registerAllAnswers(); // Register answer event listeners
             video.elem.addEventListener('timeupdate', shouldShowQuestionTick); // Listen for time updates
