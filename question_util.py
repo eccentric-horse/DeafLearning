@@ -9,7 +9,7 @@ from flask import session
 from utilities import ChatTemplate
 
 # How many questions we pick for the video
-total_questions = 3
+total_questions = 10
 
 def read_json(file_path):
     with open(file_path, 'r') as file:
