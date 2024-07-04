@@ -22,7 +22,7 @@ def choose_questions(file_list):
     json_files = {
         'transcript': 'static/transcript.json',
         'emotion': 'static/emotion.json',
-        'movement': 'static/movement.json',
+        'visual': 'static/visual.json',
     }
 
     # Read and sort entries from each file

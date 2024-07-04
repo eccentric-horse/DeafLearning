@@ -7,6 +7,8 @@ app.secret_key = os.environ['SESSION_SECRET']
 
 @app.route('/')
 def index() -> "html":
+    if 'template' in session:
+        del session['template']
     return render_template('interaction.html')
 
 @app.route('/ask', methods = ["POST"])
