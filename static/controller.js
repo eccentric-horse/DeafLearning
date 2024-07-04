@@ -52,7 +52,8 @@ function registerQuestion(element, timestamp, handler) {
     let question = new Question(element, timestamp, handler);
     questions.push(question);
     element.question = question;
-    console.log(`Registered question with id ${element.id} at ${timestamp} ms.`);
+    let questionContent = element.children[1].getInnerHTML();
+    console.log(`Registered question with id ${element.id} at ${timestamp} ms. Question: ${questionContent}}`);
 }
 
 function shouldShowQuestionTick(event) {
@@ -61,6 +62,7 @@ function shouldShowQuestionTick(event) {
     for(let question of questions) {
         if(timeMs >= question.timestamp && !question.answered) {
             question.showQuestion();
+            break;
         }
     }
 }

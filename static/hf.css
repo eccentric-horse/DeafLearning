@@ -109,3 +109,22 @@ h5 {
     font-size: 30px;
     text-align: left;
 }
+
+/* Style the answer buttons */
+.answer {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.answer:hover {
+    background-color: #c0ffc0;
+}

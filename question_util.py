@@ -7,44 +7,64 @@ import re
 # when paired with pickle, depends on how the session cookie is signed...
 from flask import session 
 from utilities import ChatTemplate
+from itertools import cycle
+from pprint import pprint
 
-# How many questions we pick for the video
+# Number of questions we pick for the video
 total_questions = 10
 
 def read_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
-def choose_questions(file_list):
+def choose_questions(file_list):  
+    video_duration=900000 # video duration 15 minutes
     json_files = {
         'transcript': 'static/transcript.json',
         'emotion': 'static/emotion.json',
         'movement': 'static/movement.json',
     }
 
-    all_entries = []
-    item_number = len(file_list)
-
+    # Read and sort entries from each file
+    all_entries = {}
     for file_key in file_list:
         file_data = read_json(json_files[file_key])
-        all_entries.append(file_data)
-
-    if item_number == 1:
-        # If only one file, pick all entries from this file
-        entries_to_pick = [total_questions]
-    else:
-        # Calculate how to distribute the entries evenly
-        entries_per_file = total_questions // item_number
-        remainder = total_questions % item_number
-        
-        entries_to_pick = [entries_per_file] * item_number
-        for i in range(remainder):
-            entries_to_pick[i] += 1
-
-    selected_entries = []
-    for i, file_data in enumerate(all_entries):
-        selected_entries.extend(random.sample(file_data, entries_to_pick[i]))
+        for question in file_data:
+            question['question_type'] = file_key
+        all_entries[file_key] = sorted(file_data, key=lambda x: x['time_stamp'])
     
+    interval = video_duration / total_questions
+    # prepare to track how many questions have been selected from each file
+    selected_counts = {key: 0 for key in file_list}
+    
+    selected_entries = []
+    start_time = 0
+    relax_selection = False
+
+    while len(selected_entries) < total_questions:
+        if start_time + interval >= video_duration:
+            # if we made it all the way through and we haven't 
+            # selected enough questions relax the buckets the questions
+            # can be chosen from
+            start_time = 0
+            relax_selection = True
+
+        end_time = start_time + interval
+        
+        # collect available questions from each file within the current interval
+        available_entries = {key: [entry for entry in all_entries[key] if start_time <= entry['time_stamp'] < end_time] for key in file_list}
+        # determine which file to select from next (cycling through the files)
+        for file_key in file_list:
+            if available_entries[file_key] and (relax_selection or selected_counts[file_key] < total_questions // len(file_list)):
+                selected_entry = random.choice(available_entries[file_key])
+                selected_entries.append(selected_entry)
+                all_entries[file_key].remove(selected_entry)  # remove selected entry to avoid picking it again
+                selected_counts[file_key] += 1
+                print(f"Selected question '{selected_entry['ID']}' from file '{file_key}'")
+                break
+        start_time = end_time
+    
+    #pprint(selected_entries)
     return selected_entries
 
 def get_chat_template():
