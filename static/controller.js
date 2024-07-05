@@ -108,7 +108,7 @@ function initializeApp() {
                 questionContainer.className = 'popup-container';
 
                 const questionHeader = document.createElement('h3');
-                questionHeader.textContent = `Quiz Question`;
+                questionHeader.textContent = `[ ${item.question_type} ] Quiz Question`;
                 questionContainer.appendChild(questionHeader);
 
                 const questionText = document.createElement('p');
@@ -127,6 +127,18 @@ function initializeApp() {
                     questionContainer.appendChild(answerButton);
                 });
 
+                const transcriptTime = document.createElement('h2');
+                transcriptTime.textContent = `Reference Timestamp: ${millisToMinutesAndSeconds(item.transcript_timestamp_start)}`;
+                questionContainer.appendChild(transcriptTime)
+
+                const questionOrder = document.createElement('h4');
+                questionOrder.textContent = `Current Question: Q ${item.order}`
+                questionContainer.appendChild(questionOrder);
+
+                const questionsLeft = document.createElement('h4');
+                questionsLeft.textContent = `${10 - item.order} questions left`
+                questionContainer.appendChild(questionsLeft);
+
                 container.appendChild(questionContainer);
                 registerQuestion(questionContainer, item.time_stamp, answerHandler);
             });
@@ -138,6 +150,12 @@ function initializeApp() {
         .catch(error => {
             console.error('Error fetching questions:', error);
         });
+}
+
+function millisToMinutesAndSeconds(millis) {
+    var minutes = Math.floor(millis / 60000);
+    var seconds = ((millis % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
 }
 
 document.body.onload = initializeApp;

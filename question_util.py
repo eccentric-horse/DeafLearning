@@ -31,8 +31,12 @@ def choose_questions(file_list):
         file_data = read_json(json_files[file_key])
         for question in file_data:
             question['question_type'] = file_key
+
         all_entries[file_key] = sorted(file_data, key=lambda x: x['time_stamp'])
-    
+
+        for index, entry in enumerate(all_entries[file_key]):
+            entry['order'] = index + 1
+
     interval = video_duration / total_questions
     # prepare to track how many questions have been selected from each file
     selected_counts = {key: 0 for key in file_list}
