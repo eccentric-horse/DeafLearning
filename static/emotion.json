@@ -1,279 +1,279 @@
 [
-  {
-      "ID": "8",
-      "transcript_timestamp_start": "7000",
-      "transcript_reference": "Two engineers worked on a simple see-through headset  that aided airplane engineers in complex wiring schematics.",
-      "question": "True or False: The two engineers worked on a complex virtual reality headset.",
-      "time_stamp": 15500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "1",
-      "transcript_timestamp_start": "15000",
-      "transcript_reference": "According to their documentation, the  goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency  improvements in many of the human involved operations in aircraft manufacturing.",
-      "question": "True or False: The goal of augmented reality, commonly abbreviated as AR, was to increase costs and inefficiencies in aircraft manufacturing.",
-      "time_stamp": 31500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "3",
-      "transcript_timestamp_start": "233000",
-      "transcript_reference": "AR core is an application programming interface  or api for building and developing mobile AR",
-      "question": "What is AR Core?",
-      "time_stamp": 243500,
-      "answers": [
-          {
-              "answer": "A video game",
-              "correct": false
-          },
-          {
-              "answer": "A programming language",
-              "correct": false
-          },
-          {
-              "answer": "An application programming interface (API)",
-              "correct": true
-          },
-          {
-              "answer": "A virtual reality headset",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "34",
-      "transcript_timestamp_start": "233000",
-      "transcript_reference": "AR core is an application programming interface or API for building and developing mobile AR.",
-      "question": "What is AR Core?",
-      "time_stamp": 243500,
-      "answers": [
-          {
-              "answer": "A video game",
-              "correct": false
-          },
-          {
-              "answer": "A programming language",
-              "correct": false
-          },
-          {
-              "answer": "An application programming interface (API)",
-              "correct": true
-          },
-          {
-              "answer": "A virtual reality headset",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "10",
-      "transcript_timestamp_start": "275000",
-      "transcript_reference": "All without ever leaving your  home but the top use case for AR shopping right now is furniture according to a few major studies.",
-      "question": "True or False: According to major studies, the primary use case for AR shopping currently is furniture.",
-      "time_stamp": 283500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "13",
-      "transcript_timestamp_start": "295000",
-      "transcript_reference": "AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home.",
-      "question": "True or False: AR allows for the integration of digital furniture models into real-world environments, unlike 2D images.",
-      "time_stamp": 307500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "35",
-      "transcript_timestamp_start": "295000",
-      "transcript_reference": "AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home.",
-      "question": "What advantage does AR offer over 2D images when visualizing furniture in your home?",
-      "time_stamp": 307500,
-      "answers": [
-          {
-              "answer": "AR allows you to see digital furniture in real life",
-              "correct": false
-          },
-          {
-              "answer": "AR integrates digital furniture models into real life",
-              "correct": true
-          },
-          {
-              "answer": "AR offers only a few furniture options",
-              "correct": false
-          },
-          {
-              "answer": "AR needs special tools to work",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "16",
-      "transcript_timestamp_start": "452000.",
-      "transcript_reference": "in that initial launch of pokemon go didn't behave the way they would if they were actually in  your physical space instead they floated on your screen and only looked properly embedded in the  environment if you line them up with the ground.",
-      "question": "How did the characters behave in the initial launch of Pokémon Go?",
-      "time_stamp": 466500,
-      "answers": [
-          {
-              "answer": "They behaved like real-life objects",
-              "correct": false
-          },
-          {
-              "answer": "They floated on the screen",
-              "correct": true
-          },
-          {
-              "answer": "They disappeared when lined up with the ground",
-              "correct": false
-          },
-          {
-              "answer": "They interacted with physical objects in the environment",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "20",
-      "transcript_timestamp_start": "499000",
-      "transcript_reference": "Spatial learning allows students to engage with  3d content directly rather than having to imagine it while reading a textbook google's expeditions.",
-      "question": "How does spatial learning differ from traditional learning with textbooks?",
-      "time_stamp": 507500,
-      "answers": [
-          {
-              "answer": "It involves imagining 3D content",
-              "correct": false
-          },
-          {
-              "answer": "It requires reading extensive text descriptions",
-              "correct": false
-          },
-          {
-              "answer": "It allows direct engagement with 3D content",
-              "correct": true
-          },
-          {
-              "answer": "It relies solely on auditory information",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "26",
-      "transcript_timestamp_start": "759000.",
-      "transcript_reference": "Occlusion means hiding virtual objects behind  other virtual objects and ones in the real world say you move behind a wall while using AR. If you  still see the AR objects it will break your sense of immersion that sense of AR objects actually  being in the real world in the app seamless.",
-      "question": "True or False: Occlusion in AR refers to the ability to hide virtual objects behind real-world objects to enhance immersion.",
-      "time_stamp": 775500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "22",
-      "transcript_timestamp_start": "861000",
-      "transcript_reference": "AR hardware has to be aware  of essentially every single object in its environment. It needs to understand that there  is a desk a chair and a table next to a bookcase. A vase and a television",
-      "question": "True or False: AR hardware needs to be aware of every object in its environment to function properly.",
-      "time_stamp": 873500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "36",
-      "transcript_timestamp_start": "861000",
-      "transcript_reference": "AR hardware has to be aware  of essentially every single object in its environment. It needs to understand that there  is a desk a chair and a table next to a bookcase, a vase and a television ",
-      "question": "What does AR hardware need to be aware of in its environment?",
-      "time_stamp": 873500,
-      "answers": [
-          {
-              "answer": "Only virtual objects",
-              "correct": false
-          },
-          {
-              "answer": "Only real objects",
-              "correct": false
-          },
-          {
-              "answer": "Every object in its environment",
-              "correct": true
-          },
-          {
-              "answer": "Objects directly in front of it",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "24",
-      "transcript_timestamp_start": "873000.",
-      "transcript_reference": "it needs to know  which of these items is taller shorter fatter or wider than the others and how this changes when  the subject moves around in space. That's a lot to track",
-      "question": "What does AR technology need to track about objects in its environment?",
-      "time_stamp": 883500,
-      "answers": [
-          {
-              "answer": "Just their color",
-              "correct": false
-          },
-          {
-              "answer": "Their size and shape",
-              "correct": true
-          },
-          {
-              "answer": "Only their location",
-              "correct": false
-          },
-          {
-              "answer": "Their material makeup",
-              "correct": false
-          }
-      ]
-  }
+    {
+        "ID": "8",
+        "transcript_timestamp_start": "7000",
+        "transcript_reference": "Two engineers worked on a simple see-through headset  that aided airplane engineers in complex wiring schematics.",
+        "question": "True or False: Were the two engineers working on a complex virtual reality headset?",
+        "time_stamp": 15500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false
+            },
+            {
+                "answer": "False",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "ID": "1",
+        "transcript_timestamp_start": "15000",
+        "transcript_reference": "According to their documentation, the  goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency  improvements in many of the human involved operations in aircraft manufacturing.",
+        "question": "True or False: The goal of augmented reality (AR) was to decrease costs and inefficiencies in aircraft manufacturing?",
+        "time_stamp": 31500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "3",
+        "transcript_timestamp_start": "233000",
+        "transcript_reference": "AR core is an application programming interface  or api for building and developing mobile AR",
+        "question": "What is AR Core?",
+        "time_stamp": 243500,
+        "answers": [
+            {
+                "answer": "A video game",
+                "correct": false
+            },
+            {
+                "answer": "A programming language",
+                "correct": false
+            },
+            {
+                "answer": "An application programming interface (API)",
+                "correct": true
+            },
+            {
+                "answer": "A virtual reality headset",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "34",
+        "transcript_timestamp_start": "233000",
+        "transcript_reference": "AR core is an application programming interface or API for building and developing mobile AR.",
+        "question": "What is AR Core?",
+        "time_stamp": 243500,
+        "answers": [
+            {
+                "answer": "A video game",
+                "correct": false
+            },
+            {
+                "answer": "A programming language",
+                "correct": false
+            },
+            {
+                "answer": "An application programming interface (API)",
+                "correct": true
+            },
+            {
+                "answer": "A virtual reality headset",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "10",
+        "transcript_timestamp_start": "275000",
+        "transcript_reference": "All without ever leaving your  home but the top use case for AR shopping right now is furniture according to a few major studies.",
+        "question": "True or False: In some significant research, it is said that furniture is the main use of AR shopping nowadays.",
+        "time_stamp": 283500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "13",
+        "transcript_timestamp_start": "295000",
+        "transcript_reference": "AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home.",
+        "question": "Is it true or false that with AR, you can place digital furniture models into your actual surroundings, unlike with 2D images?",
+        "time_stamp": 307500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "35",
+        "transcript_timestamp_start": "295000",
+        "transcript_reference": "AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home.",
+        "question": "What makes AR different from 2D images when visualizing furniture in your home?",
+        "time_stamp": 307500,
+        "answers": [
+            {
+                "answer": "AR allows you to see digital furniture in real life",
+                "correct": false
+            },
+            {
+                "answer": "AR integrates digital furniture models into real life",
+                "correct": true
+            },
+            {
+                "answer": "AR offers only a few furniture options",
+                "correct": false
+            },
+            {
+                "answer": "AR needs special tools to work",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "16",
+        "transcript_timestamp_start": "452000.",
+        "transcript_reference": "in that initial launch of pokemon go didn't behave the way they would if they were actually in  your physical space instead they floated on your screen and only looked properly embedded in the  environment if you line them up with the ground.",
+        "question": "What was the behavior of the characters in the initial launch of Pokémon Go?",
+        "time_stamp": 466500,
+        "answers": [
+            {
+                "answer": "They behaved like real-life objects",
+                "correct": false
+            },
+            {
+                "answer": "They floated on the screen",
+                "correct": true
+            },
+            {
+                "answer": "They disappeared when lined up with the ground",
+                "correct": false
+            },
+            {
+                "answer": "They interacted with physical objects in the environment",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "20",
+        "transcript_timestamp_start": "499000",
+        "transcript_reference": "Spatial learning allows students to engage with  3d content directly rather than having to imagine it while reading a textbook google's expeditions.",
+        "question": "How is spatial learning different from traditional learning with textbooks?",
+        "time_stamp": 507500,
+        "answers": [
+            {
+                "answer": "Involves imagining 3D content",
+                "correct": false
+            },
+            {
+                "answer": "Requires reading long text descriptions",
+                "correct": false
+            },
+            {
+                "answer": "Allows direct engagement with 3D content",
+                "correct": true
+            },
+            {
+                "answer": "Only relies on hearing information",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "26",
+        "transcript_timestamp_start": "759000.",
+        "transcript_reference": "Occlusion means hiding virtual objects behind  other virtual objects and ones in the real world say you move behind a wall while using AR. If you  still see the AR objects it will break your sense of immersion that sense of AR objects actually  being in the real world in the app seamless.",
+        "question": "Is it true or false that occlusion in AR involves hiding virtual objects behind real-world objects to make the experience more immersive?",
+        "time_stamp": 775500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "22",
+        "transcript_timestamp_start": "861000",
+        "transcript_reference": "AR hardware has to be aware  of essentially every single object in its environment. It needs to understand that there  is a desk a chair and a table next to a bookcase. A vase and a television",
+        "question": "True or False: Does AR hardware need to be aware of every object in its environment to work well?",
+        "time_stamp": 873500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "36",
+        "transcript_timestamp_start": "861000",
+        "transcript_reference": "AR hardware has to be aware  of essentially every single object in its environment. It needs to understand that there  is a desk a chair and a table next to a bookcase, a vase and a television ",
+        "question": "What does AR hardware need to be aware of in its environment?",
+        "time_stamp": 873500,
+        "answers": [
+            {
+                "answer": "Only virtual objects",
+                "correct": false
+            },
+            {
+                "answer": "Only real objects",
+                "correct": false
+            },
+            {
+                "answer": "Every object in its environment",
+                "correct": true
+            },
+            {
+                "answer": "Objects directly in front of it",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "24",
+        "transcript_timestamp_start": "873000.",
+        "transcript_reference": "it needs to know  which of these items is taller shorter fatter or wider than the others and how this changes when  the subject moves around in space. That's a lot to track",
+        "question": "What information does AR technology need to track about objects in its surroundings?",
+        "time_stamp": 883500,
+        "answers": [
+            {
+                "answer": "Just their color",
+                "correct": false
+            },
+            {
+                "answer": "Their size and shape",
+                "correct": true
+            },
+            {
+                "answer": "Only their location",
+                "correct": false
+            },
+            {
+                "answer": "Their material makeup",
+                "correct": false
+            }
+        ]
+    }
 ]
