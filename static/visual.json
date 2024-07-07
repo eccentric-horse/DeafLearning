@@ -1,279 +1,279 @@
 [
-  {
-      "ID": "31",
-      "transcript_timestamp_start": "15000",
-      "transcript_reference": "According to their documentation, the goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency improvements in many of the human involved operations in aircraft manufacturing",
-      "question": "What was the primary aim of augmented reality (AR) according to the video?",
-      "time_stamp": 31500,
-      "answers": [
-          {
-              "answer": "Making entertainment better",
-              "correct": false
-          },
-          {
-              "answer": "Cutting costs and making aircraft production more efficient (effective)",
-              "correct": true
-          },
-          {
-              "answer": "Enhancing medical services",
-              "correct": false
-          },
-          {
-              "answer": "Progressing communication technology",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "2",
-      "transcript_timestamp_start": "15000",
-      "transcript_reference": "According to their documentation, the  goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency  improvements in many of the human involved operations in aircraft manufacturing. We've been dreaming about the potential of AR for a long time and the history of the medium stretches  back before we even had a term for it",
-      "question": "True or False: According to the video, the goal of augmented reality (AR) was primarily to enhance entertainment experiences.",
-      "time_stamp": 39500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "0",
-      "transcript_timestamp_start": "135000",
-      "transcript_reference": "In fact the rapid development of smartphones  has actually contributed to the growth of the vr and ar industries. That's because the same  components that make smartphones work gyroscopes. Accelerometers miniaturized high-resolution  displays are also required for AR and VR headsets. The high demand for smartphones has driven the  mass production of these components throughout the past 10 years, resulting in greater  hardware innovations and decreases in costs. In the most basic sense AR is created using the  front and rear facing cameras on your phone.",
-      "question": "True or False: The rapid development of smartphones has not contributed to the growth of the VR and AR industries.",
-      "time_stamp": 173500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "6",
-      "transcript_timestamp_start": "216000",
-      "transcript_reference": "Tango enabled phones could track the world around them and as a result. We're  capable of rendering unique digital overlays onto the real world",
-      "question": "What was Tango, as described in the video?",
-      "time_stamp": 226500,
-      "answers": [
-          {
-              "answer": "A software-only application for smartphones",
-              "correct": false
-          },
-          {
-              "answer": "A combination of custom software and additional hardware for smartphones",
-              "correct": true
-          },
-          {
-              "answer": "A social media platform",
-              "correct": false
-          },
-          {
-              "answer": "An augmented reality game",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "15",
-      "transcript_timestamp_start": "291000",
-      "transcript_reference": "If you aren't sure it'll fit right in your living  room or match your curtains, AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home. AR makes full use of 3d space letting you see the furniture  at the exact size and dimensions of real life. Major furniture retailers like ikea  and house have put ideas like this into practice with the option to purchase  included directly within the application.",
-      "question": "True or False: AR allows consumers to virtually try on products like furniture in their real-world settings.",
-      "time_stamp": 325500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "12",
-      "transcript_timestamp_start": "345000",
-      "transcript_reference": "and advertisers can reach consumers  with immersive campaigns and this is just the tip of the iceberg. The power of ar is that it  lets users build relationships with brands inside their physical spaces rather than trapped  behind screens.",
-      "question": "True or False: AR technology confines users to interact with brands solely through screens.",
-      "time_stamp": 360500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "32",
-      "transcript_timestamp_start": "345000",
-      "transcript_reference": "advertisers can reach consumers  with immersive campaigns and this is just the tip of the iceberg. The power of ar is that it  lets users build relationships with brands inside their physical spaces rather than trapped  behind screens.",
-      "question": "According to the video, what is one advantage of AR for advertisers?",
-      "time_stamp": 360500,
-      "answers": [
-          {
-              "answer": "It focuses brand interaction on screens",
-              "correct": false
-          },
-          {
-              "answer": "It limits brand interaction to only physical stores",
-              "correct": false
-          },
-          {
-              "answer": "It helps advertisers reach consumers with engaging campaigns",
-              "correct": true
-          },
-          {
-              "answer": "It prevents brand-consumer relationships",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "17",
-      "transcript_timestamp_start": "415000",
-      "transcript_reference": "n  2016 pokemon go became the first viral ar game since then we've seen the launch of similar games  from mainstream franchises like harry potter the walking dead and ghostbusters and  we'll see many more in the coming years.",
-      "question": "What does the video suggest about the future of AR games?",
-      "time_stamp": 430500,
-      "answers": [
-          {
-              "answer": "They will decline in popularity",
-              "correct": false
-          },
-          {
-              "answer": "There will be no more AR games released",
-              "correct": false
-          },
-          {
-              "answer": "We will see more AR games from mainstream franchises in the coming years",
-              "correct": true
-          },
-          {
-              "answer": "AR games will only be released by independent developers",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "11",
-      "transcript_timestamp_start": "608000",
-      "transcript_reference": "allowing audiences to see the real world effects of  systemic problems makes AR a powerful strategy for non-profits and other social impact  organizations to enhance their messaging.",
-      "question": "How does the video suggest AR can be beneficial for non-profits and social impact organizations?",
-      "time_stamp": 619500,
-      "answers": [
-          {
-              "answer": "By limiting audience reach to a few hundred people",
-              "correct": false
-          },
-          {
-              "answer": "By creating presentations in front of large crowds",
-              "correct": false
-          },
-          {
-              "answer": "By enabling audiences to visualize real-world effects of systemic problems",
-              "correct": true
-          },
-          {
-              "answer": "By avoiding the use of technology in messaging",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "30",
-      "transcript_timestamp_start": "644000",
-      "transcript_reference": "The first of these behaviors is place stationary  ar objects need to stick to one point in a given environment.",
-      "question": "True or False: AR objects need to stay in one position in the environment.",
-      "time_stamp": 651500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": true
-          },
-          {
-              "answer": "False",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "33",
-      "transcript_timestamp_start": "652000",
-      "transcript_reference": "This could be something concrete such as a wall floor or ceiling or it could be suspended somewhere in midair whatever the case placing means these objects stay where they're positioned even when users are in motion.",
-      "question": "Which of the following is NOT mentioned as a possible placement for AR objects?",
-      "time_stamp": 665500,
-      "answers": [
-          {
-              "answer": "Wall",
-              "correct": false
-          },
-          {
-              "answer": "Floor",
-              "correct": false
-          },
-          {
-              "answer": "Skey",
-              "correct": true
-          },
-          {
-              "answer": "Ceiling",
-              "correct": false
-          }
-      ]
-  },
-  {
-      "ID": "23",
-      "transcript_timestamp_start": "738000",
-      "transcript_reference": "However imagine if you moved your hand in front  of your face and the screen was still visible You'd probably get a little concerned. AR objects  have to play by the rules of occlusion",
-      "question": "True or False: AR objects are not affected by occlusion.",
-      "time_stamp": 747500,
-      "answers": [
-          {
-              "answer": "True",
-              "correct": false
-          },
-          {
-              "answer": "False",
-              "correct": true
-          }
-      ]
-  },
-  {
-      "ID": "27",
-      "transcript_timestamp_start": "801000.",
-      "transcript_reference": "The colors shading and  shadows cast by these objects all need to behave properly both in the initial lighting of a scene  and in the case of a lighting change",
-      "question": "What aspects of AR objects need to behave properly according to the transcript?",
-      "time_stamp": 811500,
-      "answers": [
-          {
-              "answer": "Shapes and sizes",
-              "correct": false
-          },
-          {
-              "answer": "Movement styles",
-              "correct": false
-          },
-          {
-              "answer": "Colors, shading, and shadows",
-              "correct": true
-          },
-          {
-              "answer": "Textures and materials",
-              "correct": false
-          }
-      ]
-  }
+    {
+        "ID": "31",
+        "transcript_timestamp_start": "15000",
+        "transcript_reference": "According to their documentation, the goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency improvements in many of the human involved operations in aircraft manufacturing",
+        "question": "What was the main goal of augmented reality (AR) based on the video?",
+        "time_stamp": 31500,
+        "answers": [
+            {
+                "answer": "Making entertainment better",
+                "correct": false
+            },
+            {
+                "answer": "Cutting costs and making aircraft production more efficient (effective)",
+                "correct": true
+            },
+            {
+                "answer": "Enhancing medical services",
+                "correct": false
+            },
+            {
+                "answer": "Progressing communiation technology",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "2",
+        "transcript_timestamp_start": "15000",
+        "transcript_reference": "According to their documentation, the  goal of augmented reality commonly abbreviated as AR was to enable cost reductions and efficiency  improvements in many of the human involved operations in aircraft manufacturing. We've been dreaming about the potential of AR for a long time and the history of the medium stretches  back before we even had a term for it",
+        "question": "True or False: According to the information, the main goal of augmented reality (AR) was to improve efficiency in aircraft manufacturing.",
+        "time_stamp": 39500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "0",
+        "transcript_timestamp_start": "135000",
+        "transcript_reference": "In fact the rapid development of smartphones  has actually contributed to the growth of the vr and ar industries. That's because the same  components that make smartphones work gyroscopes. Accelerometers miniaturized high-resolution  displays are also required for AR and VR headsets. The high demand for smartphones has driven the  mass production of these components throughout the past 10 years, resulting in greater  hardware innovations and decreases in costs. In the most basic sense AR is created using the  front and rear facing cameras on your phone.",
+        "question": "True or False: The fast growth of smartphones did not help the VR and AR industries.",
+        "time_stamp": 173500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false
+            },
+            {
+                "answer": "False",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "ID": "6",
+        "transcript_timestamp_start": "216000",
+        "transcript_reference": "Tango enabled phones could track the world around them and as a result. We're  capable of rendering unique digital overlays onto the real world",
+        "question": "What was Tango according to the video?",
+        "time_stamp": 226500,
+        "answers": [
+            {
+                "answer": "A software-only application for smartphones",
+                "correct": false
+            },
+            {
+                "answer": "A combination of custom software and extra hardware for smartphones",
+                "correct": true
+            },
+            {
+                "answer": "A social media platform",
+                "correct": false
+            },
+            {
+                "answer": "An augmented reality game",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "15",
+        "transcript_timestamp_start": "291000",
+        "transcript_reference": "If you aren't sure it'll fit right in your living  room or match your curtains, AR's unique ability to work within the world around us makes it easy  to integrate digital versions of furniture right inside your house unlike 2d images which force you  to imagine the object in your home. AR makes full use of 3d space letting you see the furniture  at the exact size and dimensions of real life. Major furniture retailers like ikea  and house have put ideas like this into practice with the option to purchase  included directly within the application.",
+        "question": "Is it true that AR allows people to virtually try out products like furniture in their actual surroundings?",
+        "time_stamp": 325500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "12",
+        "transcript_timestamp_start": "345000",
+        "transcript_reference": "and advertisers can reach consumers  with immersive campaigns and this is just the tip of the iceberg. The power of ar is that it  lets users build relationships with brands inside their physical spaces rather than trapped  behind screens.",
+        "question": "True or False: AR technology allows users to interact with brands only through screens.",
+        "time_stamp": 360500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false
+            },
+            {
+                "answer": "False",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "ID": "32",
+        "transcript_timestamp_start": "345000",
+        "transcript_reference": "advertisers can reach consumers  with immersive campaigns and this is just the tip of the iceberg. The power of ar is that it  lets users build relationships with brands inside their physical spaces rather than trapped  behind screens.",
+        "question": "Based on the video, what is one benefit of AR for advertisers?",
+        "time_stamp": 360500,
+        "answers": [
+            {
+                "answer": "It focuses brand interaction on screens",
+                "correct": false
+            },
+            {
+                "answer": "It limits brand interaction to only physical stores",
+                "correct": false
+            },
+            {
+                "answer": "It helps advertisers reach consumers with engaging campaigns",
+                "correct": true
+            },
+            {
+                "answer": "It prevents brand-consumer relationships",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "17",
+        "transcript_timestamp_start": "415000",
+        "transcript_reference": "n  2016 pokemon go became the first viral ar game since then we've seen the launch of similar games  from mainstream franchises like harry potter the walking dead and ghostbusters and  we'll see many more in the coming years.",
+        "question": "What will happen to AR games in the future according to the video?",
+        "time_stamp": 430500,
+        "answers": [
+            {
+                "answer": "They will become less popular",
+                "correct": false
+            },
+            {
+                "answer": "No more AR games will be released",
+                "correct": false
+            },
+            {
+                "answer": "More AR games from popular franchises will be seen in the future",
+                "correct": true
+            },
+            {
+                "answer": "Only solo game developers will release AR",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "11",
+        "transcript_timestamp_start": "608000",
+        "transcript_reference": "allowing audiences to see the real world effects of  systemic problems makes AR a powerful strategy for non-profits and other social impact  organizations to enhance their messaging.",
+        "question": "How does the video show AR can help non-profits and social impact groups?",
+        "time_stamp": 619500,
+        "answers": [
+            {
+                "answer": "By showing to only a few people",
+                "correct": false
+            },
+            {
+                "answer": "By giving talks in front of many people",
+                "correct": false
+            },
+            {
+                "answer": "By helping audiences see real-world effects of systemic issues",
+                "correct": true
+            },
+            {
+                "answer": "By not using technology in messaging",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "30",
+        "transcript_timestamp_start": "644000",
+        "transcript_reference": "The first of these behaviors is place stationary  ar objects need to stick to one point in a given environment.",
+        "question": "True or False: Do AR objects need to stay in one position in the environment?",
+        "time_stamp": 651500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": true
+            },
+            {
+                "answer": "False",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "33",
+        "transcript_timestamp_start": "652000",
+        "transcript_reference": "This could be something concrete such as a wall floor or ceiling or it could be suspended somewhere in midair whatever the case placing means these objects stay where they're positioned even when users are in motion.",
+        "question": "What is NOT mentioned as a possible place to put AR objects?",
+        "time_stamp": 665500,
+        "answers": [
+            {
+                "answer": "Wall",
+                "correct": false
+            },
+            {
+                "answer": "Floor",
+                "correct": false
+            },
+            {
+                "answer": "Sky",
+                "correct": true
+            },
+            {
+                "answer": "Ceiling",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "ID": "23",
+        "transcript_timestamp_start": "738000",
+        "transcript_reference": "However imagine if you moved your hand in front  of your face and the screen was still visible You'd probably get a little concerned. AR objects  have to play by the rules of occlusion",
+        "question": "True or False: AR objects are not affected by occlusion.",
+        "time_stamp": 747500,
+        "answers": [
+            {
+                "answer": "True",
+                "correct": false
+            },
+            {
+                "answer": "False",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "ID": "27",
+        "transcript_timestamp_start": "801000.",
+        "transcript_reference": "The colors shading and  shadows cast by these objects all need to behave properly both in the initial lighting of a scene  and in the case of a lighting change",
+        "question": "What parts of AR objects need to act correctly based on the passage?",
+        "time_stamp": 811500,
+        "answers": [
+            {
+                "answer": "Shapes and sizes",
+                "correct": false
+            },
+            {
+                "answer": "Movement styles",
+                "correct": false
+            },
+            {
+                "answer": "Colors, shading, and shadows",
+                "correct": true
+            },
+            {
+                "answer": "Textures and materials",
+                "correct": false
+            }
+        ]
+    }
 ]
