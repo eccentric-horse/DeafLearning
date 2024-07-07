@@ -9,6 +9,7 @@ from flask import session
 from utilities import ChatTemplate
 from itertools import cycle
 from pprint import pprint
+from db_util import save_chat_interaction
 
 # Number of questions we pick for the video
 total_questions = 10
@@ -88,6 +89,8 @@ def get_question_types(prompt):
     message = chat_template.completion({}).choices[0].message
     pattern = r'QUESTIONS(.*)DONE'
     result = None
+
+    save_chat_interaction(prompt, message.content)
 
     if 'DONE' in message.content:
         # Apply the provided regex pattern to extract desired information

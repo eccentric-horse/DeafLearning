@@ -1,4 +1,4 @@
 flask
 openai
-Flask-Session 
-redis  
+Flask-Session
+azure-data-tables
