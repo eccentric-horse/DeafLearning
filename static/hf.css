@@ -1,21 +1,43 @@
 /* Style for pop-up container */
 .popup-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     display: none;
 }
+
 /* Style for video container */
 .video-container {
-    width: 1000px; /* Adjust the width as needed */
-    height: 650px; /* Adjust the height as needed */
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+    width: 55%; /* Adjust the width as needed */
+    height: 55%; /* Adjust the height as needed */
+    overflow: auto;
+    margin-right: 2%;
+    float: left;
+}
+
+/* Style for questions container */
+.questions-container {
+    width: 42%;
+    float: left;
+}
+
+/* Style the answer buttons */
+.answer {
+    /* display: block; */
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.answer:hover {
+    background-color: #c0ffc0;
 }
 
 body {
@@ -108,23 +130,4 @@ h5 {
     color: #2980b9;
     font-size: 30px;
     text-align: left;
-}
-
-/* Style the answer buttons */
-.answer {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    font-size: 25px;
-    border: 2px solid #000;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Change background color on hover */
-.answer:hover {
-    background-color: #c0ffc0;
 }
