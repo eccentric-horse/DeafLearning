@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, jsonify, session, redirect, u
 from flask_session import Session
 from cachelib.file import FileSystemCache
 from question_util import choose_questions, get_question_types
-from db_util import save_answer_data, save_selected_questions
+from db_util import save_answer_data, save_selected_questions, save_survey_data
+
 import os
+import uuid
 
 app = Flask(__name__)
 app.secret_key = os.environ['SESSION_SECRET']
@@ -19,6 +21,7 @@ Session(app)
 @app.route('/')
 def index() -> "html":
     session.clear()
+    session['uuid'] = str(uuid.uuid4())
     return render_template('interaction.html')
 
 @app.route('/ask', methods = ["POST"])
@@ -26,6 +29,7 @@ def do_ask() -> "html":
     prompt = request.form['input_string']
     results, complete = get_question_types(prompt)
     if complete:
+        session['question_types'] = results
         return redirect(url_for('questions', qt=results))
 
     return render_template('response.html',
@@ -74,6 +78,15 @@ def log_answer():
 
     # return status ok
     return "", 200
+
+@app.route('/survey', methods=['GET', 'POST'])
+def survey():
+    if request.method == 'POST':
+        save_survey_data(request.form.to_dict())
+        return render_template("survey_success.html")
+    else:
+        return render_template('survey.html', 
+                                qt=session.get('question_types', []))
 
 if __name__ == '__main__':
     app.run(debug=True)

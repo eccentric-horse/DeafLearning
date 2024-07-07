@@ -55,7 +55,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
 table {
@@ -130,4 +130,55 @@ h5 {
     color: #2980b9;
     font-size: 30px;
     text-align: left;
+}
+
+/* Style the answer buttons */
+.answer {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.answer:hover {
+    background-color: #c0ffc0;
+}
+
+/* button */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button button:hover {
+    background-color: #0056b3;
+}
+
+/* survey */
+.radios {
+    display: flex;
+    gap: 10px;
+}
+.radios label {
+    font-size: 30px;
+}
+.radios input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.5);
 }

@@ -13,7 +13,7 @@ def save_selected_questions(questions):
     question_encoded = json.dumps(questions)
     question_entity = {
         'PartitionKey': "pk",
-        'RowKey': session.sid,
+        'RowKey': session['uuid'],
         'questions': question_encoded,
     }
     
@@ -31,7 +31,7 @@ def save_answer_data(question_data, answer_index, time_answered):
         table_client = table_service_client.get_table_client(table_name="logs")
         
         try:
-            entity = table_client.get_entity(partition_key="pk", row_key=session.sid)
+            entity = table_client.get_entity(partition_key="pk", row_key=session['uuid'])
         except:
             entity = {}
 
@@ -44,7 +44,7 @@ def save_answer_data(question_data, answer_index, time_answered):
 
         answer_entity = {
             'PartitionKey': "pk",
-            'RowKey': session.sid,
+            'RowKey': session['uuid'],
             'answers': json.dumps([answer_entry])
         }
 
@@ -63,7 +63,7 @@ def save_chat_interaction(prompt, response):
         table_client = table_service_client.get_table_client(table_name="logs")
         
         try:
-            entity = table_client.get_entity(partition_key="pk", row_key=session.sid)
+            entity = table_client.get_entity(partition_key="pk", row_key=session['uuid'])
         except:
             entity = {}
 
@@ -75,7 +75,7 @@ def save_chat_interaction(prompt, response):
 
         chat_entity = {
             'PartitionKey': "pk",
-            'RowKey': session.sid,
+            'RowKey': session['uuid'],
             'chat_log': json.dumps([chat_entry])
         }
 
@@ -85,3 +85,19 @@ def save_chat_interaction(prompt, response):
             chat_entity['chat_log'] = json.dumps(chat)
 
         table_client.upsert_entity(mode=UpdateMode.MERGE, entity=chat_entity)
+
+def save_survey_data(responses):
+    if not connection_string:
+        return
+    
+    responses_encoded = json.dumps(responses)
+
+    response_entity = {
+        'PartitionKey': "pk",
+        'RowKey': session['uuid'],
+        'survey': responses_encoded,
+    }
+    
+    with TableServiceClient.from_connection_string(conn_str=connection_string) as table_service_client:
+        table_client = table_service_client.get_table_client(table_name="logs")
+        table_client.upsert_entity(mode=UpdateMode.MERGE, entity=response_entity)

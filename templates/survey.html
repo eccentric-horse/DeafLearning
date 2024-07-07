@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div>
+    <h2>Thank you for participating! Now please do this quick survey</h2>
+
+    <div id="survey-container">
+        <form id="survey-form" method='POST' onsubmit="return checkForm()" action='/survey'>
+
+            {% for question_type in qt %}
+                <h3>For questions in this category only: {{question_type}}</h3>
+                <h4>How relevant do you think this question is for you to help you understand the whole video?</h4>
+                <div class="radios">
+                    <input type="radio" id="relevant1-{{question_type}}" name="relevance-{{question_type}}" value="relevant" required>
+                    <label for="relevant1-{{question_type}}">Relevant!</label><br>
+                    <input type="radio" id="neutral1-{{question_type}}" name="relevance-{{question_type}}" value="neutral" required>
+                    <label for="neutral1-{{question_type}}">Neutral</label><br>
+                    <input type="radio" id="not-relevant1-{{question_type}}" name="relevance-{{question_type}}" value="not-relevant" required>
+                    <label for="not-relevant1-{{question_type}}">Not relevant!</label>
+                </div>
+            
+                <h4>How easy was it for you to understand this question?</h4>
+                <div class="radios">
+                    <input type="radio" id="easy1-{{question_type}}" name="understanding-{{question_type}}" value="easy" required>
+                    <label for="easy1-{{question_type}}">Easy!</label><br>
+                    <input type="radio" id="neutral2-{{question_type}}" name="understanding-{{question_type}}" value="neutral" required>
+                    <label for="neutral2-{{question_type}}">Neutral</label><br>
+                    <input type="radio" id="hard1-{{question_type}}" name="understanding-{{question_type}}" value="hard" required>
+                    <label for="hard1-{{question_type}}">Hard!</label>
+                </div>
+            
+                <h4>I think this question helps me to recall facts and basic concepts.</h4>
+                <div class="radios">
+                    <input type="radio" id="agree1-{{question_type}}" name="recall-{{question_type}}" value="agree" required>
+                    <label for="agree1-{{question_type}}">Agree!</label><br>
+                    <input type="radio" id="neutral3-{{question_type}}" name="recall-{{question_type}}" value="neutral" required>
+                    <label for="neutral3-{{question_type}}">Neutral</label><br>
+                    <input type="radio" id="disagree1-{{question_type}}" name="recall-{{question_type}}" value="disagree" required>
+                    <label for="disagree1-{{question_type}}">Disagree!</label>
+                </div>
+            
+                <h4>I think this question helps me understand and explain concepts and ideas important in this video.</h4>
+                <div class="radios">
+                    <input type="radio" id="agree2-{{question_type}}" name="understand-concepts-{{question_type}}" value="agree" required>
+                    <label for="agree2-{{question_type}}">Agree!</label><br>
+                    <input type="radio" id="neutral4-{{question_type}}" name="understand-concepts-{{question_type}}" value="neutral" required>
+                    <label for="neutral4-{{question_type}}">Neutral</label><br>
+                    <input type="radio" id="disagree2-{{question_type}}" name="understand-concepts-{{question_type}}" value="disagree" required>
+                    <label for="disagree2-{{question_type}}">Disagree!</label>
+                </div>
+                <br><br>
+
+            {% endfor %}
+            
+            <div class="button">
+                <button type="submit">Submit the Survey</button>
+            </div>
+        </form>
+
+        <script>
+            function checkForm() {
+                for (const el of document.getElementById('survey-form').querySelectorAll("[required]")) {
+                    if (!el.reportValidity()) {
+                        el.scrollIntoView();
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+        </script>
+        
+    </div>
+</div>
+
+{% endblock %}
