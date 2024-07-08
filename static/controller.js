@@ -192,6 +192,14 @@ function initializeApp() {
                 questionContainer.setAttribute("question-index", question_index);
                 questionContainer.className = 'popup-container';
 
+                const questionOrder = document.createElement('h4');
+                questionOrder.textContent = `This is question #${item.order}`
+                questionContainer.appendChild(questionOrder);
+
+                const questionsLeft = document.createElement('h4');
+                questionsLeft.textContent = `There are ${10 - item.order} questions left`
+                questionContainer.appendChild(questionsLeft);
+
                 const questionHeader = document.createElement('h3');
                 questionHeader.textContent = `[ ${item.question_type} ] Quiz Question`;
                 questionContainer.appendChild(questionHeader);
@@ -226,14 +234,6 @@ function initializeApp() {
                 const transcriptTime = document.createElement('h2');
                 transcriptTime.textContent = `Reference Start Timestamp: ${millisToMinutesAndSeconds(item.transcript_timestamp_start)}`;
                 questionContainer.appendChild(transcriptTime)
-
-                const questionOrder = document.createElement('h4');
-                questionOrder.textContent = `This is question #${item.order}`
-                questionContainer.appendChild(questionOrder);
-
-                const questionsLeft = document.createElement('h4');
-                questionsLeft.textContent = `There are ${10 - item.order} questions left`
-                questionContainer.appendChild(questionsLeft);
 
                 container.appendChild(questionContainer);
                 registerQuestion(questionContainer, item.time_stamp, answerHandler);
