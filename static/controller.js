@@ -193,7 +193,7 @@ function initializeApp() {
                 questionContainer.className = 'popup-container';
 
                 const questionHeader = document.createElement('h3');
-                questionHeader.textContent = `Quiz Question`;
+                questionHeader.textContent = `[ ${item.question_type} ] Quiz Question`;
                 questionContainer.appendChild(questionHeader);
 
                 if (`${item.question_type}` !== "transcript") {
