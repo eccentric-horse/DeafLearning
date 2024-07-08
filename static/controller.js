@@ -170,11 +170,12 @@ function registerAllAnswers() {
 }
 
 function answerHandler(selectedAnswer) {
+    const congratsMessages = ["Brilliant job, that is correct!", "Awesome answer, you are correct!", "Wonderful, that is the correct answer!", "Great work, you got the right answer!", "Correct, you are killing it!"];
     if(selectedAnswer.getAttribute("correct")) {
-        alert("Yes that is right!");
+        alert(congratsMessages[Math.random() * congratsMessages.length >> 0]);
         return true;
     } else {
-        alert("No that is not quite right.");
+        alert("Incorrect, please try again.\nYou can also rewind if you need to watch again - \"Reference Start Timestamp\" tells you the best place to go back to for this particular question.");
         return false;
     }
 }
@@ -192,8 +193,17 @@ function initializeApp() {
                 questionContainer.className = 'popup-container';
 
                 const questionHeader = document.createElement('h3');
-                questionHeader.textContent = `[ ${item.question_type} ] Quiz Question`;
+                questionHeader.textContent = `Quiz Question`;
                 questionContainer.appendChild(questionHeader);
+
+                if (`${item.question_type}` !== "transcript") {
+                    const questionInfo = document.createElement('p1');
+                    if (`${item.question_type}` === "emotion")
+                        questionInfo.textContent = "It seems like most DHH learners have confusion here. We generated this question to support your understanding:";
+                    else
+                        questionInfo.textContent = "It seems like visual movements tend to be overwhelming here. We generated this question to support your visual attention:";
+                    questionContainer.appendChild(questionInfo);
+                }
 
                 const questionText = document.createElement('p');
                 questionText.textContent = item.question;
@@ -214,15 +224,15 @@ function initializeApp() {
                 });
 
                 const transcriptTime = document.createElement('h2');
-                transcriptTime.textContent = `Reference Timestamp: ${millisToMinutesAndSeconds(item.transcript_timestamp_start)}`;
+                transcriptTime.textContent = `Reference Start Timestamp: ${millisToMinutesAndSeconds(item.transcript_timestamp_start)}`;
                 questionContainer.appendChild(transcriptTime)
 
                 const questionOrder = document.createElement('h4');
-                questionOrder.textContent = `Current Question: Q ${item.order}`
+                questionOrder.textContent = `This is question #${item.order}`
                 questionContainer.appendChild(questionOrder);
 
                 const questionsLeft = document.createElement('h4');
-                questionsLeft.textContent = `${10 - item.order} questions left`
+                questionsLeft.textContent = `There are ${10 - item.order} questions left`
                 questionContainer.appendChild(questionsLeft);
 
                 container.appendChild(questionContainer);
