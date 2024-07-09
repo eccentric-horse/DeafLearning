@@ -59,31 +59,6 @@
         ]
     },
     {
-        "ID": "34",
-        "transcript_timestamp_start": "233000",
-        "transcript_reference": "AR core is an application programming interface or API for building and developing mobile AR.",
-        "question": "What is AR Core?",
-        "time_stamp": 243500,
-        "answers": [
-            {
-                "answer": "A video game",
-                "correct": false
-            },
-            {
-                "answer": "A programming language",
-                "correct": false
-            },
-            {
-                "answer": "An application programming interface (API)",
-                "correct": true
-            },
-            {
-                "answer": "A virtual reality headset",
-                "correct": false
-            }
-        ]
-    },
-    {
         "ID": "10",
         "transcript_timestamp_start": "275000",
         "transcript_reference": "All without ever leaving your  home but the top use case for AR shopping right now is furniture according to a few major studies.",
