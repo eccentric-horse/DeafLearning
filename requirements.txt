@@ -2,3 +2,4 @@ flask
 openai
 Flask-Session
 azure-data-tables
+xlsxwriter
