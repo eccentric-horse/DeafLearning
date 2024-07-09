@@ -17,45 +17,298 @@
 
             {% for question_type in qt %}
                 <h3>For questions in this category only: {{question_type}}</h3>
-                <h4>How relevant do you think this question is for you to help you understand the whole video?</h4>
+
+                <h5>The questions in this category were</h5>
+                {% for q in questions %}
+                    {% if q['question_type'] == question_type %}
+                        <p1><li>{{q['question']}}</li></p1>
+                    {% endif %}
+                {% endfor %}
+
+                <h2>Multimedia Learning Theory</h2>
+                <h4>Question 1: Overall, This set of questions help me learn the video better by "Reducing Irrelevant Information”</h4>
                 <div class="radios">
-                    <input type="radio" id="relevant1-{{question_type}}" name="relevance-{{question_type}}" value="relevant" required>
-                    <label for="relevant1-{{question_type}}">Relevant!</label><br>
-                    <input type="radio" id="neutral1-{{question_type}}" name="relevance-{{question_type}}" value="neutral" required>
-                    <label for="neutral1-{{question_type}}">Neutral</label><br>
-                    <input type="radio" id="not-relevant1-{{question_type}}" name="relevance-{{question_type}}" value="not-relevant" required>
-                    <label for="not-relevant1-{{question_type}}">Not relevant!</label>
+                    <label for="q1-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q1-option1-{{question_type}}" name="q1-{{question_type}}" value="1" required>
+                    <label for="q1-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q1-option2-{{question_type}}" name="q1-{{question_type}}" value="2" required>
+                    <label for="q1-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q1-option3-{{question_type}}" name="q1-{{question_type}}" value="3" required>
+                    <label for="q1-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q1-option4-{{question_type}}" name="q1-{{question_type}}" value="4" required>
+                    <label for="q1-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q1-option5-{{question_type}}" name="q1-{{question_type}}" value="5" required>
+                    <label for="q1-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q1-option6-{{question_type}}" name="q1-{{question_type}}" value="6" required>
+                    <label for="q1-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q1-option7-{{question_type}}" name="q1-{{question_type}}" value="7" required>
+                    <label for="q1-{{question_type}}">7</label><br>
+                    
+                    <label for="q1-{{question_type}}">Strongly Agree</label>
                 </div>
             
-                <h4>How easy was it for you to understand this question?</h4>
+                <h4>Question 2: Overall, This set of questions help me learn the video better by “​​Focusing on Essential Information”</h4>
                 <div class="radios">
-                    <input type="radio" id="easy1-{{question_type}}" name="understanding-{{question_type}}" value="easy" required>
-                    <label for="easy1-{{question_type}}">Easy!</label><br>
-                    <input type="radio" id="neutral2-{{question_type}}" name="understanding-{{question_type}}" value="neutral" required>
-                    <label for="neutral2-{{question_type}}">Neutral</label><br>
-                    <input type="radio" id="hard1-{{question_type}}" name="understanding-{{question_type}}" value="hard" required>
-                    <label for="hard1-{{question_type}}">Hard!</label>
+                    <label for="q2-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q2-option1-{{question_type}}" name="q2-{{question_type}}" value="1" required>
+                    <label for="q2-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q2-option2-{{question_type}}" name="q2-{{question_type}}" value="2" required>
+                    <label for="q2-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q2-option3-{{question_type}}" name="q2-{{question_type}}" value="3" required>
+                    <label for="q2-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q2-option4-{{question_type}}" name="q2-{{question_type}}" value="4" required>
+                    <label for="q2-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q2-option5-{{question_type}}" name="q2-{{question_type}}" value="5" required>
+                    <label for="q2-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q2-option6-{{question_type}}" name="q2-{{question_type}}" value="6" required>
+                    <label for="q2-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q2-option7-{{question_type}}" name="q2-{{question_type}}" value="7" required>
+                    <label for="q2-{{question_type}}">7</label><br>
+                    
+                    <label for="q2-{{question_type}}">Strongly Agree</label>
                 </div>
             
-                <h4>I think this question helps me to recall facts and basic concepts.</h4>
+                <h4>Question 3: Overall, This set of questions help me learn the video better by “Fostering Connection between Text and Image”</h4>
                 <div class="radios">
-                    <input type="radio" id="agree1-{{question_type}}" name="recall-{{question_type}}" value="agree" required>
-                    <label for="agree1-{{question_type}}">Agree!</label><br>
-                    <input type="radio" id="neutral3-{{question_type}}" name="recall-{{question_type}}" value="neutral" required>
-                    <label for="neutral3-{{question_type}}">Neutral</label><br>
-                    <input type="radio" id="disagree1-{{question_type}}" name="recall-{{question_type}}" value="disagree" required>
-                    <label for="disagree1-{{question_type}}">Disagree!</label>
+                    <label for="q3-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q3-option1-{{question_type}}" name="q3-{{question_type}}" value="1" required>
+                    <label for="q3-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q3-option2-{{question_type}}" name="q3-{{question_type}}" value="2" required>
+                    <label for="q3-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q3-option3-{{question_type}}" name="q3-{{question_type}}" value="3" required>
+                    <label for="q3-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q3-option4-{{question_type}}" name="q3-{{question_type}}" value="4" required>
+                    <label for="q3-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q3-option5-{{question_type}}" name="q3-{{question_type}}" value="5" required>
+                    <label for="q3-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q3-option6-{{question_type}}" name="q3-{{question_type}}" value="6" required>
+                    <label for="q3-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q3-option7-{{question_type}}" name="q3-{{question_type}}" value="7" required>
+                    <label for="q3-{{question_type}}">7</label><br>
+                    
+                    <label for="q3-{{question_type}}">Strongly Agree</label>
                 </div>
+                <br><br>
             
-                <h4>I think this question helps me understand and explain concepts and ideas important in this video.</h4>
+                <h2>NASA</h2>
+                <h4>Question 4: Overall, the mental demand to learn the video with this set of questions is</h4>
                 <div class="radios">
-                    <input type="radio" id="agree2-{{question_type}}" name="understand-concepts-{{question_type}}" value="agree" required>
-                    <label for="agree2-{{question_type}}">Agree!</label><br>
-                    <input type="radio" id="neutral4-{{question_type}}" name="understand-concepts-{{question_type}}" value="neutral" required>
-                    <label for="neutral4-{{question_type}}">Neutral</label><br>
-                    <input type="radio" id="disagree2-{{question_type}}" name="understand-concepts-{{question_type}}" value="disagree" required>
-                    <label for="disagree2-{{question_type}}">Disagree!</label>
+                    <label for="q4-{{question_type}}">Easy</label>
+
+                    <input type="radio" id="q4-option1-{{question_type}}" name="q4-{{question_type}}" value="1" required>
+                    <label for="q4-{{question_type}}">1</label><br>
+
+                    <input type="radio" id="q4-option2-{{question_type}}" name="q4-{{question_type}}" value="2" required>
+                    <label for="q4-{{question_type}}">2</label><br>
+
+                    <input type="radio" id="q4-option3-{{question_type}}" name="q4-{{question_type}}" value="3" required>
+                    <label for="q4-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q4-option4-{{question_type}}" name="q4-{{question_type}}" value="4" required>
+                    <label for="q4-{{question_type}}">4</label><br>
+
+                    <input type="radio" id="q4-option5-{{question_type}}" name="q4-{{question_type}}" value="5" required>
+                    <label for="q4-{{question_type}}">5</label><br>
+
+                    <input type="radio" id="q4-option6-{{question_type}}" name="q4-{{question_type}}" value="6" required>
+                    <label for="q4-{{question_type}}">6</label><br>
+
+                    <input type="radio" id="q4-option7-{{question_type}}" name="q4-{{question_type}}" value="7" required>
+                    <label for="q4-{{question_type}}">7</label><br>
+
+                    <input type="radio" id="q4-option8-{{question_type}}" name="q4-{{question_type}}" value="8" required>
+                    <label for="q4-{{question_type}}">8</label><br>
+
+                    <input type="radio" id="q4-option9-{{question_type}}" name="q4-{{question_type}}" value="9" required>
+                    <label for="q4-{{question_type}}">9</label><br>
+
+                    <input type="radio" id="q4-option10-{{question_type}}" name="q4-{{question_type}}" value="10" required>
+                    <label for="q4-{{question_type}}">10</label><br>
+
+                    <label for="q4-{{question_type}}">Hard</label>
                 </div>
+
+                <h4>Question 5: Overall, the physical demand to learn the video with this set of questions is</h4>
+                <div class="radios">
+                    <label for="q5-{{question_type}}">Easy</label>
+
+                    <input type="radio" id="q5-option1-{{question_type}}" name="q4-{{question_type}}" value="1" required>
+                    <label for="q5-{{question_type}}">1</label><br>
+
+                    <input type="radio" id="q5-option2-{{question_type}}" name="q4-{{question_type}}" value="2" required>
+                    <label for="q5-{{question_type}}">2</label><br>
+
+                    <input type="radio" id="q5-option3-{{question_type}}" name="q5-{{question_type}}" value="3" required>
+                    <label for="q5-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q5-option4-{{question_type}}" name="q5-{{question_type}}" value="4" required>
+                    <label for="q5-{{question_type}}">4</label><br>
+
+                    <input type="radio" id="q5-option5-{{question_type}}" name="q5-{{question_type}}" value="5" required>
+                    <label for="q5-{{question_type}}">5</label><br>
+
+                    <input type="radio" id="q5-option6-{{question_type}}" name="q5-{{question_type}}" value="6" required>
+                    <label for="q5-{{question_type}}">6</label><br>
+
+                    <input type="radio" id="q5-option7-{{question_type}}" name="q5-{{question_type}}" value="7" required>
+                    <label for="q5-{{question_type}}">7</label><br>
+
+                    <input type="radio" id="q5-option8-{{question_type}}" name="q5-{{question_type}}" value="8" required>
+                    <label for="q5-{{question_type}}">8</label><br>
+
+                    <input type="radio" id="q5-option9-{{question_type}}" name="q5-{{question_type}}" value="9" required>
+                    <label for="q5-{{question_type}}">9</label><br>
+
+                    <input type="radio" id="q5-option10-{{question_type}}" name="q5-{{question_type}}" value="10" required>
+                    <label for="q5-{{question_type}}">10</label><br>
+
+                    <label for="q5-{{question_type}}">Hard</label>
+                </div>
+
+                <h4>Question 6: Overall, the learning satisfaction to learn the video with this set of questions is</h4>
+                <div class="radios">
+                    <label for="q6-{{question_type}}">Easy</label>
+
+                    <input type="radio" id="q6-option1-{{question_type}}" name="q6-{{question_type}}" value="1" required>
+                    <label for="q6-{{question_type}}">1</label><br>
+
+                    <input type="radio" id="q6-option2-{{question_type}}" name="q6-{{question_type}}" value="2" required>
+                    <label for="q6-{{question_type}}">2</label><br>
+
+                    <input type="radio" id="q6-option3-{{question_type}}" name="q6-{{question_type}}" value="3" required>
+                    <label for="q6-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q6-option4-{{question_type}}" name="q6-{{question_type}}" value="4" required>
+                    <label for="q6-{{question_type}}">4</label><br>
+
+                    <input type="radio" id="q6-option5-{{question_type}}" name="q6-{{question_type}}" value="5" required>
+                    <label for="q6-{{question_type}}">5</label><br>
+
+                    <input type="radio" id="q6-option6-{{question_type}}" name="q6-{{question_type}}" value="6" required>
+                    <label for="q6-{{question_type}}">6</label><br>
+
+                    <input type="radio" id="q6-option7-{{question_type}}" name="q6-{{question_type}}" value="7" required>
+                    <label for="q6-{{question_type}}">7</label><br>
+
+                    <input type="radio" id="q6-option8-{{question_type}}" name="q6-{{question_type}}" value="8" required>
+                    <label for="q6-{{question_type}}">8</label><br>
+
+                    <input type="radio" id="q6-option9-{{question_type}}" name="q6-{{question_type}}" value="9" required>
+                    <label for="q6-{{question_type}}">9</label><br>
+
+                    <input type="radio" id="q6-option10-{{question_type}}" name="q6-{{question_type}}" value="10" required>
+                    <label for="q6-{{question_type}}">10</label><br>
+
+                    <label for="q6-{{question_type}}">Hard</label>
+                </div>
+                <br><br>
+
+                <h2>Bloom's Taxonomy</h2>
+                <h4>Question 7: Overall, I think this set of questions helps me recall facts and basic concepts in this video.</h4>
+                <div class="radios">
+                    <label for="q7-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q7-option1-{{question_type}}" name="q7-{{question_type}}" value="1" required>
+                    <label for="q7-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q7-option2-{{question_type}}" name="q7-{{question_type}}" value="2" required>
+                    <label for="q7-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q7-option3-{{question_type}}" name="q7-{{question_type}}" value="3" required>
+                    <label for="q7-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q7-option4-{{question_type}}" name="q7-{{question_type}}" value="4" required>
+                    <label for="q7-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q7-option5-{{question_type}}" name="q7-{{question_type}}" value="5" required>
+                    <label for="q7-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q7-option6-{{question_type}}" name="q7-{{question_type}}" value="6" required>
+                    <label for="q7-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q7-option7-{{question_type}}" name="q7-{{question_type}}" value="7" required>
+                    <label for="q7-{{question_type}}">7</label><br>
+                    
+                    <label for="q7-{{question_type}}">Strongly Agree</label>
+                </div>
+
+                <h4>Question 8: Overall, I think this set of questions helps me understand, explain concepts and ideas in this video.</h4>
+                <div class="radios">
+                    <label for="q8-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q8-option1-{{question_type}}" name="q8-{{question_type}}" value="1" required>
+                    <label for="q8-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q8-option2-{{question_type}}" name="q8-{{question_type}}" value="2" required>
+                    <label for="q8-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q8-option3-{{question_type}}" name="q8-{{question_type}}" value="3" required>
+                    <label for="q8-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q8-option4-{{question_type}}" name="q8-{{question_type}}" value="4" required>
+                    <label for="q8-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q8-option5-{{question_type}}" name="q8-{{question_type}}" value="5" required>
+                    <label for="q8-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q8-option6-{{question_type}}" name="q8-{{question_type}}" value="6" required>
+                    <label for="q8-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q8-option7-{{question_type}}" name="q8-{{question_type}}" value="7" required>
+                    <label for="q8-{{question_type}}">7</label><br>
+                    
+                    <label for="q8-{{question_type}}">Strongly Agree</label>
+                </div>
+
+                <h4>Question 9:  Overall, I think this set of questions helps me apply information in new situations not in this video.</h4>
+                <div class="radios">
+                    <label for="q9-{{question_type}}">Strongly Disagree</label>
+                    
+                    <input type="radio" id="q9-option1-{{question_type}}" name="q9-{{question_type}}" value="1" required>
+                    <label for="q9-{{question_type}}">1</label><br>
+                    
+                    <input type="radio" id="q9-option2-{{question_type}}" name="q9-{{question_type}}" value="2" required>
+                    <label for="q9-{{question_type}}">2</label><br>
+                    
+                    <input type="radio" id="q9-option3-{{question_type}}" name="q9-{{question_type}}" value="3" required>
+                    <label for="q9-{{question_type}}">3</label><br>
+
+                    <input type="radio" id="q9-option4-{{question_type}}" name="q9-{{question_type}}" value="4" required>
+                    <label for="q9-{{question_type}}">4</label><br>
+                    
+                    <input type="radio" id="q9-option5-{{question_type}}" name="q9-{{question_type}}" value="5" required>
+                    <label for="q9-{{question_type}}">5</label><br>
+                    
+                    <input type="radio" id="q9-option6-{{question_type}}" name="q9-{{question_type}}" value="6" required>
+                    <label for="q9-{{question_type}}">6</label><br>
+                    
+                    <input type="radio" id="q9-option7-{{question_type}}" name="q9-{{question_type}}" value="7" required>
+                    <label for="q9-{{question_type}}">7</label><br>
+                    
+                    <label for="q9-{{question_type}}">Strongly Agree</label>
+                </div>
+
                 <br><br>
 
             {% endfor %}
