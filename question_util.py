@@ -21,9 +21,9 @@ def read_json(file_path):
 def choose_questions(file_list):  
     video_duration=900000 # video duration 15 minutes
     json_files = {
-        'transcript': 'static/transcript.json',
-        'emotion': 'static/emotion.json',
-        'visual': 'static/visual.json',
+        'Transcript-Based': 'static/transcript.json',
+        'Transcript+Emotion': 'static/emotion.json',
+        'Transcript+Visual': 'static/visual.json',
     }
 
     # Read and sort entries from each file
