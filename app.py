@@ -85,10 +85,8 @@ def survey():
         save_survey_data(request.form.to_dict())
         return render_template("survey_success.html")
     else:
-        from pprint import pprint
-        pprint(session['questions'])
         return render_template('survey.html', 
-                                questions=session['questions'],
+                                questions=session.get('questions', []),
                                 qt=session.get('question_types', []))
 
 if __name__ == '__main__':
