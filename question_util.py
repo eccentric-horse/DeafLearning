@@ -8,7 +8,6 @@ import re
 from flask import session 
 from utilities import ChatTemplate
 from itertools import cycle
-from pprint import pprint
 from db_util import save_chat_interaction
 
 # Number of questions we pick for the video
@@ -18,7 +17,7 @@ def read_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
-def choose_questions(file_list):  
+def choose_questions(question_types):  
     video_duration=900000 # video duration 15 minutes
     json_files = {
         'transcript': 'static/transcript.json',
@@ -26,50 +25,58 @@ def choose_questions(file_list):
         'visual': 'static/visual.json',
     }
 
+    # if for some reason we ask for more questions than are available
+    # just stop looking
+    total_avail_questions = 0
+
     # Read and sort entries from each file
     all_entries = {}
-    for file_key in file_list:
-        file_data = read_json(json_files[file_key])
+    for q_type in question_types:
+        file_data = read_json(json_files[q_type])
         for question in file_data:
-            question['question_type'] = file_key
+            question['question_type'] = q_type
+            total_avail_questions += 1
 
-        all_entries[file_key] = sorted(file_data, key=lambda x: x['time_stamp'])
+        all_entries[q_type] = sorted(file_data, key=lambda x: x['time_stamp'])
 
-        for index, entry in enumerate(all_entries[file_key]):
+        for index, entry in enumerate(all_entries[q_type]):
             entry['order'] = index + 1
 
     interval = video_duration / total_questions
     # prepare to track how many questions have been selected from each file
-    selected_counts = {key: 0 for key in file_list}
+    selected_counts = {key: 0 for key in question_types}
     
     selected_entries = []
     start_time = 0
     relax_selection = False
 
-    while len(selected_entries) < total_questions:
-        if start_time + interval >= video_duration:
+    while len(selected_entries) < total_questions and total_avail_questions > 0:
+        end_time = start_time + interval
+
+        if end_time > video_duration:
             # if we made it all the way through and we haven't 
             # selected enough questions relax the buckets the questions
-            # can be chosen from
+            # can be chosen from and reset the time interval
             start_time = 0
+            end_time = interval
             relax_selection = True
 
-        end_time = start_time + interval
-        
         # collect available questions from each file within the current interval
-        available_entries = {key: [entry for entry in all_entries[key] if start_time <= entry['time_stamp'] < end_time] for key in file_list}
+        available_entries = {key: [entry for entry in all_entries[key] if start_time <= entry['time_stamp'] < end_time] for key in question_types}
+        #print(available_entries, len(selected_entries), all_entries["emotion"])
         # determine which file to select from next (cycling through the files)
-        for file_key in file_list:
-            if available_entries[file_key] and (relax_selection or selected_counts[file_key] < total_questions // len(file_list)):
-                selected_entry = random.choice(available_entries[file_key])
+        for q_type in question_types:
+            type_bucket_not_full = selected_counts[q_type] < total_questions // len(question_types)
+            if available_entries[q_type] and (relax_selection or type_bucket_not_full):
+                selected_entry = random.choice(available_entries[q_type])
                 selected_entries.append(selected_entry)
-                all_entries[file_key].remove(selected_entry)  # remove selected entry to avoid picking it again
-                selected_counts[file_key] += 1
-                print(f"Selected question '{selected_entry['ID']}' from file '{file_key}'")
+                all_entries[q_type].remove(selected_entry)  # remove selected entry to avoid picking it again
+                selected_counts[q_type] += 1
+                total_avail_questions -= 1
+                print(f"Selected question '{selected_entry['ID']}' for question_type '{q_type}'")
                 break
         start_time = end_time
-    
-    #pprint(selected_entries)
+
     return selected_entries
 
 def get_chat_template():
