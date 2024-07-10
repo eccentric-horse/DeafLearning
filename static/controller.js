@@ -246,6 +246,9 @@ function initializeApp() {
             video.elem.addEventListener('seeked', videoSeeked); // manage seeked
             video.elem.addEventListener("waiting", videoWaiting); // hack
 
+            document.getElementById("interactive-video").style = 'display:block';
+            document.getElementById("loading-image").style = 'display:none';
+
         })
         .catch(error => {
             console.error('Error fetching questions:', error);
