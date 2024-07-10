@@ -80,7 +80,7 @@ function registerQuestion(element, timestamp, handler) {
     let question = new Question(element, timestamp, handler);
     questions.push(question);
     element.question = question;
-    let questionContent = element.children[1].getInnerHTML();
+    let questionContent = element.innerText;
     // keep questions array ordered by timestamp to speed up question lookup
     // the index of this questions array is not related to the one on the server!!!
     // use the attribute of the question element to get that index
