@@ -100,8 +100,6 @@ def get_question_types(prompt):
     save_chat_interaction(prompt, message.content)
 
     if 'DONE' in message.content:
-        # Apply the provided regex pattern to extract desired information
-        # Return the extracted information, stripped of leading and trailing whitespace
         result = re.search(pattern, message.content, 
                            re.DOTALL).group(1).strip().split(" "), True
     else:
