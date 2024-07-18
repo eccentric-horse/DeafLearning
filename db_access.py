@@ -103,8 +103,9 @@ def write_to_workbook(data_member, participant):
                 question_data = thing["question"]
                 if question_data["ID"] == prev_question[0]:
                     prev_question[1] += 1
-                    participant_worksheet.write(row-1, 2, prev_question[1])
-                    participant_worksheet.write(row-1, 3, "FALSE")
+                    row -= 1
+                    participant_worksheet.write(row, 2, prev_question[1])
+                    participant_worksheet.write(row, 3, "FALSE")
                 else:
                     prev_question[0] = question_data["ID"]
                     prev_question[1] = 1
@@ -185,15 +186,18 @@ def write_to_workbook(data_member, participant):
     participant_worksheet = qa_summary_file.add_worksheet(participant)
     for col, header in enumerate(qa_summary_headers):
         participant_worksheet.write(0, col, header)
-    try:
-        participant_worksheet.write(1, 0, qa_summary["transcript"])
-        participant_worksheet.write(1, 1, qa_summary["emotion"])
-        participant_worksheet.write(1, 2, qa_summary["visual"])
+    error = True
+    for value in qa_summary.values():
+        if value != 0:
+            error = False
+    if not error:
+        for col, value in enumerate(qa_summary.values()):
+            participant_worksheet.write(1, col, value)
         print("\tSuccessfully wrote QA summary")
-    except TypeError:
-        for col, header in enumerate(qa_summary_headers):
-            participant_worksheet.write(1, col, "Error reading data")
-        print("\tError grabbing data")
+    else:
+        for col in range(3):
+            participant_worksheet.write(1, col, "No data")
+        print("\tNo data for QA summary")
 
     # for col, key in enumerate(headers):
     #     value = get_value(entity, key)
