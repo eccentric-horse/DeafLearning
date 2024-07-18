@@ -39,9 +39,6 @@ def choose_questions(question_types):
 
         all_entries[q_type] = sorted(file_data, key=lambda x: x['time_stamp'])
 
-        for index, entry in enumerate(all_entries[q_type]):
-            entry['order'] = index + 1
-
     interval = video_duration / total_questions
     # prepare to track how many questions have been selected from each file
     selected_counts = {key: 0 for key in question_types}
@@ -76,6 +73,10 @@ def choose_questions(question_types):
                 print(f"Selected question '{selected_entry['ID']}' for question_type '{q_type}'")
                 break
         start_time = end_time
+
+    selected_entries.sort(key=lambda x: x['time_stamp'])
+    for index, entry in enumerate(selected_entries):
+        entry['order'] = index + 1
 
     return selected_entries
 
